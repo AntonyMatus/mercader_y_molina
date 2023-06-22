@@ -1,5 +1,6 @@
 @extends('layout.app')
 
+@section('title', 'Home')
 
 @section('content')
     <!--== hero area here ==-->
@@ -281,9 +282,9 @@
 
   <div class="customer2">
       <div class="customer_wrapper margin">
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-6 d-grid align-items-center">
+          <div class="container">
+              <div class="row display-repons">
+                  <div class="col-sm-12 col-md-6 d-grid align-items-center">
                       <div class="customer_container">
                           <div class="customer_items">
                               <div class="customer_item">
@@ -304,7 +305,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-6 ">
+                  <div class="col-sm-12 col-md-6 ">
                     <img src="assets/images/banner/themis-estatua-justicia.png" alt="">
                   </div>
               </div>

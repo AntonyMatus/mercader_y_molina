@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use App\Models\Category;
-use App\Models\Faq;
 use App\Models\Post;
 use App\Models\Service;
 
@@ -25,49 +24,6 @@ class PublicController extends Controller
         return view('pages.index', compact('posts', 'services'));
     }
 
-    public function about()
-    {
-        
-        return view('pages.about');
-    }
-
-    public function home2()
-    {
-        $posts = Post::with(['category'])
-                        ->latest()
-                        ->where('status', 1)
-                        ->take(2)
-                        ->get();
-                        
-        $services = Service::all();
-
-       
-        return view('pages.home2', compact('posts', 'services'));
-    }
-
-
-    public function agradecimiento() 
-    {
-        return view('pages.agradecimiento');
-    }
-    public function aviso()
-    {
-        return view('pages.aviso_de_privacidad');
-    }
-
-    public function services()
-    {
-        $services = Service::all();
-
-        return view('pages.services', compact('services'));
-    }
-
-    public function faq()
-    {
-        $faqs = Faq::all();
-
-        return view('pages.faq', compact('faqs'));
-    }
 
     public function blog()
     {
@@ -129,11 +85,6 @@ class PublicController extends Controller
         }
 
         return view('pages.single_blog', compact('post', 'related_posts'));   
-    }
-
-    public function contact()
-    {
-        return view('pages.contact');
     }
 
     public function sendContactMail(Request $request)

@@ -48,7 +48,7 @@
             <div class="header_wrapper">
                 <!-- logo container  -->
                 <div class="logo_container">
-                <a href="index.html">
+                <a href="{{ route('home') }}">
                     <img src="assets/images/logo/mercader_logo_nav.png" alt="Mercader">
                 </a>
                 </div>
@@ -63,11 +63,11 @@
                 <!-- nav content -->
                 <div class="header_nav">
                     <ul class="navigation">
-                    <li><a href="#!">Introducción</a></li>
-                    <li><a href="about.html">Servicios</a></li>
-                    <li><a href="#!">Preguntas Frecuentas</a></li>
-                    <li><a href="#!">Blog</a></li>
-                    <li><a href="#!">Contacto</a>
+                    <li><a href="#about">Introducción</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#faqs">Preguntas Frecuentas</a></li>
+                    <li><a href=" {{ route('blog')}} ">Blog</a></li>
+                    <li><a href="#contact">Contacto</a>
                     </li>
                     </ul>
                 </div>
@@ -157,7 +157,6 @@
     <script src="{{ asset('assets/js/aos.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ asset('assets/js/utils.js') }}"></script>
-    <script src="{{ asset('assets/js/newsletter.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
     @yield('scripts')
 </body>

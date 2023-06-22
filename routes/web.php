@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [PublicController::class, 'index']);
-Route::get('/services', [PublicController::class, 'services'])->name('services');
+Route::get('/', [PublicController::class, 'index'])->name('home');
+Route::get('/blog', [PublicController::class, 'blog'])->name('blog');
+Route::get('/single_blog', [PublicController::class, 'single_blog'])->name('single_blog');
+Route::get('/contact', [PublicController::class, 'contact'])->name('contact');

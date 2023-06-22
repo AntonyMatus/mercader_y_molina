@@ -938,11 +938,11 @@ Extra large: ---------
         gap: 14px;
     }
     .bd_post_info .profile .thumb img {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
     .bd_post_info .profile .name h4 {
-        font-size: 24px;
+        font-size: 16px;
     }
     .bd_post_info .publish_date .date p {
         font-size: 16px;
@@ -1111,7 +1111,7 @@ Extra large: ---------
 Extra large: ---------
 2) 1200 xlarge devices
 ##############################*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1325px){
     /* common  */
     /* common end */
     
@@ -1189,11 +1189,624 @@ Extra large: ---------
 
 }
 
+
+@media screen and (max-width: 1180px) and (min-width:1041px) {
+    /* common  */
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sp_120 {
+        padding: 80px 0px;
+    }
+    .sp_Top120 {
+        padding-top: 80px;
+    }
+    .section_header {
+        margin-bottom: 40px;
+    }
+    .section_heading {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .html-video{
+        height: 100%;
+        width: auto;
+    }
+    /* vector  */
+    .vector {
+        display: none !important;
+    }
+    /* common end */
+    
+    /* 
+    1) home-one-991-------------------]
+    */
+    /*********************** 
+    1.1-991) header area here
+    ***********************/
+    .header {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .sticky {
+        height: 70px;
+    }
+
+    /* logo container */
+    .logo_container {
+        margin-right: 0;
+    }
+    .logo_container img {
+        height: 46px;
+    }
+
+    /* header container  */
+    .header_container {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        bottom: 0;
+        width: max-content;
+        height: 100vh;
+        background: var(--clientColor);
+        flex-direction: column;
+        padding: 120px 15px 330px;
+        opacity: 0;
+        visibility: hidden;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        transition: all .6s ease;
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+    }
+    .header_container.show{
+        left: -0%;
+        opacity: 1;
+        visibility: visible;
+    }
+    /* closing container  */
+    .closing_container {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    /* header container  */
+    /* navigation area here  */
+    .header .header_container .header_nav {
+        width: 100%;
+    }
+    .header .header_container .header_nav .navigation {
+        flex-direction: column;
+        gap: 0;
+        background: transparent;
+        padding: 60px 0px;
+    }
+    .header .header_container .header_nav .navigation li {
+        width: 100%;
+    }
+    .header .header_container .header_nav .navigation > li > a {
+        padding: 12px 0px !important;
+        display: block;
+        text-align: center;
+        color: var(--white);
+        font-size: 14px;
+        line-height: 100%;
+    }
+    .header .header_container .header_nav .navigation li a:hover {
+        background: var(--blackDesH2);
+        color: var(--whiteDes2);
+    }
+    .header .header_container .header_nav .navigation li .sub {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        padding: 0;
+        position: inherit;
+        border: 0;
+        display: none;
+        text-align: center;
+        box-shadow: none;
+    }
+    .header .header_container .header_nav .navigation li.SubMenuShow .sub {
+        display: block;
+        background: transparent;
+    }
+    .header .header_container .header_nav .navigation li.SubMenuShow .sub li a {
+        color: var(--whiteDes2);
+    }
+    .header .header_container .header_nav .navigation li .sub li a {
+        font-size: 12px;
+        line-height: 100%;
+    }
+    /* navigation area ends here  */
+    .header_container .header_button {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    .header_container .header_button .mainButton.buttonH1:hover {
+        color: var(--blackH1) !important;
+        background: transparent !important;
+        border: 1px solid var(--blackH1) !important;
+    }
+    .header_container .header_button .transparentButton.buttonH1:hover {
+        color: var(--white) !important;
+        background: var(--blackH1) !important;
+        border: 1px solid var(--blackH1) !important;
+    }
+    /* bar conatiner */
+    .bar_container {
+        display: block;
+    }
+
+    /*********************** 
+    1.2-991) hero area here
+    ***********************/
+    .hero,
+    .aHero,
+    .pChoose,
+    .inde_hero,
+    .signUp,
+    .contact_hero {
+        margin-top: 80px;
+    }
+    .hero_container .hero_header {
+        font-size: 48px;
+    }
+    .hero_wrapper .banner_image {
+        display: none;
+    }
+    .hero_wrapper .vector img {
+        left: auto;
+        right: 0;
+    }
+    .hero_container .hero_condition {
+        gap: 20px;
+    }
+
+    /*********************** 
+    1.3-991) features area here
+    ***********************/
+    .features .features_wrapper {
+        background-position: center;
+        padding-bottom: 80px;
+    }
+    .features_container .features_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features_container .features_item {
+        padding: 40px 15px;
+    }
+
+    /*********************** 
+    1.4-991) about features area here
+    ***********************/
+    .abf_container .abf_content {
+        grid-gap: 40px;
+    }
+    .abf_container .abf_list li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .abf_container .abf_list li p {
+        font-size: 16px;
+        line-height: 18px;
+        gap: 10px;
+    }
+    .abf_container .abf_description p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*********************** 
+    1.5-991) grow area here
+    ***********************/
+    .grow_container .grow_content {
+        padding: 80px 20px;
+    }
+
+    /*********************** 
+    1.6-991) testimonials area here
+    ***********************/
+    .testimonials_item .content {
+        padding: 40px 20px;
+    }
+    .testimonials_item .content .description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /*********************** 
+    1.7-991) choose area here
+    ***********************/
+    .choose_list .choose_list_content {
+        grid-template-columns: auto auto;
+    }
+    .choose_list_content .choose_content {
+        padding: 40px 20px 120px;
+    }
+
+    /*********************** 
+    1.8-991) cta area here
+    ***********************/
+    .cta .cta_wrapper {
+        padding: 80px 0px;
+    }
+
+    /*********************** 
+    1.9-991) footer area here
+    ***********************/
+    .footer_widget .fw_title {
+        margin-bottom: 16px;
+    }
+    .footer_widget .fw_list a {
+        font-size: 14px;
+        line-height: 34px;
+    }
+    .copyright_container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .copyright_container .copyright_link {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    /* 
+    2) about-991-------------------]
+    */
+    /*********************** 
+    2.1-991) about hero area here
+    ***********************/
+    .aHero_container .thumb img {
+        height: 300px;
+    }
+
+    /*********************** 
+    2.2-991) about funfact area here
+    ***********************/
+    /* common  */
+    .aHero_container .section_header p,
+    .aFunfact_container .section_header p,
+    .aFunfact_container .item p  {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    /* common ends here  */
+    .aFunfact_container .items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .aFunfact_container .item:not(:last-child)::after {
+        display: none;
+    }
+
+    /*********************** 
+    2.3-991) about values area here
+    ***********************/
+    .aValues_container {
+        display: flex;
+        
+        gap: 60px;
+    }
+    .aValues_container .aValues_items {
+        grid-gap: 60px;
+    }
+    .aValues_container .aValues_items .aValues_item:nth-child(2),
+    .aValues_container .aValues_items .aValues_item:nth-child(3) {
+        margin-top: inherit;
+    }
+    .aValues_container .aValues_item .aValues_content {
+        padding: 20px;
+    }
+    .aValues_right .content {
+        text-align: center;
+    }
+    .aValues_right .content .section_heading {
+        text-align: center;
+    }
+    .aValues_right .content .aValues_description p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*
+    3) integrates-details-991-------------------]
+    */
+    /***********************
+    3.1-991) integrates details hero area here
+    ***********************/
+    .inde_hero_container .single_content .thumb {
+        margin-top: -60px;
+    }
+    .inde_hero_container .single_content .thumb img {
+        height: 60px;
+    }
+    .inde_hero_container .single_content .name {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .inde_hero_container .single_content .info {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .inde_hero_container .single_content .des {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /***********************
+    3.2-991) integrates details about area here
+    ***********************/
+    .inde_about_container .content h2 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .inde_about_container .content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    /*
+    4) blog-details-991-------------------]
+    */
+    /***********************
+    4.1-991) about hero area here
+    ***********************/
+    .blog_details_hero {
+        padding: 60px 0px 0px;
+    }
+
+    /***********************
+    4.2-991) blog details area here
+    ***********************/
+    .bd_post_info {
+        margin-bottom: 40px;
+    }
+    .bd_post_info .profile {
+        gap: 10px;
+    }
+    .bd_post_info .profile .thumb img {
+        width: 40px;
+        height: 40px;
+    }
+    .bd_post_info .profile .name h4 {
+        font-size: 18px;
+    }
+    .bd_post_info .publish_date {
+        gap: 10px;
+    }
+    .bd_post_info .publish_date .thumb {
+        width: 30px;
+        height: 30px;
+    }
+    .bd_post_info .publish_date .thumb >* {
+        font-size: 11px;
+    }
+    .bd_post_info .publish_date .date p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .bd_content .content h2.title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .bd_content .content p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .bd_content .testimonial .testimonial_content {
+        padding: 30px 20px;
+    }
+    .bd_content .testimonial .testimonial_content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .bd_content .testimonial .testimonial_content .test_info {
+        gap: 10px;
+    }
+    .bd_content .testimonial .testimonial_content .test_info .thumb img {
+        width: 40px;
+        height: 40px;
+    }
+    .bd_content .testimonial .testimonial_content .test_info .name h6 {
+        font-size: 18px;
+    }
+    .bd_content .testimonial .testimonial_content .quote {
+        font-size: 30px;
+        right: 20px;
+        bottom: 30px;
+    }
+
+    /*
+    5) sign-up-991-------------------]
+    */
+    /***********************
+    5.1-991) sign up area here
+    ***********************/
+    .signUp_input_group {
+        grid-template-columns: auto;
+    }
+    .signUp_with_group {
+        grid-template-columns: auto;
+    }
+
+
+    /*
+    6) home-two-991-------------------]
+    */
+    /***********************
+    6.1-991) hero2 area here
+    ***********************/
+    .hero2 {
+        margin-top: 80px;
+    }
+    .hero_container2 .hero_heading2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .hero_container2 .star_items li a {
+        font-size: 14px;
+    }
+
+    /***********************
+    6.2-991) features two area here
+    ***********************/
+    /* common area here  */
+    .section_heading2 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .section_header2 .desc {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    /* common area ends here  */
+    .features_container2 .features_items2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /***********************
+    6.3-991) customer area here
+    ***********************/
+    .customer_item {
+        grid-gap: 60px;
+    }
+    
+    .ch_container{
+        grid-gap: 20px;
+    }
+    /***********************
+    6.4-991) offer area here
+    ***********************/
+    .offer_banner {
+        display: none;
+    }
+    
+    .signUp_item_img .card{
+        left: 0px;
+        top: 41px;
+    }
+    .justify-content-left{
+        justify-content: left !important;
+    }
+
+    .inde_hero{
+        padding-bottom: 0px;
+    }
+
+    .offer_banner{
+        display: initial;
+    }
+
+    .column-reverse{
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .sp_1502{
+        padding: 100px 0px;
+    }
+    .col-lg-6{
+        width: 100% !important;
+    }
+
+    /*
+    7) integrates-1400-------------------]
+    */
+    /***********************
+    7.1-1400) about features area here
+    ***********************/
+    .about_features.iFeatures {
+        margin-top: 80px;
+    }
+
+    /* Cambios Ipad Pro */
+
+    .padding-text{
+        margin: 0px 90px
+    }
+
+    .abf_container .abf_content .section_heading{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .blog_content .thumb{
+        height: 150px;
+        width: 100%;
+    }
+    .copyright_container .copyright_link{
+        justify-content: center;
+    }
+    .header{
+        height: 104px;
+    }
+    .inde_hero_container .single_content{
+        margin: -60px auto 0;
+    }
+
+    .header .header_container .header_nav .navigation > li > a{
+        text-align: left;
+        font-size: 23px;
+        line-height: 50px;
+    }
+    .abf_container .abf_content .section_heading2{
+        font-family: 'Montserrat';
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .customer_item_home{
+        grid-template-columns: 1fr 1fr;
+    }
+    .customer_item{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .subtitle2{
+        text-align: center;
+    }
+
+    .customer_button{
+        display: grid;
+        justify-content: center;
+    }
+
+    .abf_container .abf_content{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .ipad{display: none;}
+    .mainButton.buttonH1{
+        border: 1px solid var(--white);
+    }
+}
 /*##############################
 large layout:  --------- 
 3) 991px large devices
 ##############################*/
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1040px){
     /* common  */
     .container-fluid {
         padding-left: 0;
@@ -1287,7 +1900,7 @@ large layout:  ---------
     .header .header_container .header_nav .navigation {
         flex-direction: column;
         gap: 0;
-        background: var(--blackDesH2);
+        background: transparent;
         padding: 60px 0px;
     }
     .header .header_container .header_nav .navigation li {
@@ -1709,7 +2322,7 @@ large layout:  ---------
 Medium Layout: ---------
 4) 768px medium devices
 ##############################*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 820px){
     /* 
     1) home-one-768-------------------]
     */
@@ -2060,6 +2673,16 @@ Medium Layout: ---------
         grid-gap: 60px;
     }
 
+    .header .header_container .header_nav .navigation > li > a{
+        text-align: left;
+        font-size: 23px;
+        line-height: 50px;
+    }
+
+    .header .header_container .header_nav .navigation{
+        padding: 0px;
+    }
+
 }
 
 /*##############################
@@ -2144,6 +2767,29 @@ Small Layout: ---------
         margin-top: 30px;
     }
 
+    .display-repons{
+        display: grid;
+        padding-top: 2rem;
+        grid-gap: 2rem;
+    }
+
+    .footer_container .footer_items{
+        justify-content: center;
+    }
+
+    .header_container {
+        justify-content: center;
+        background: #003E51;;
+    }
+
+    .closing_container{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+
+    
 }
 
 /*########################

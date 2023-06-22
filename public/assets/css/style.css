@@ -106,7 +106,7 @@ CSS INDEX
 	width: 100%;
 	height: 100vh;
 	position: fixed;
-	background: var(--yellowH2);
+	background: #003E51;
 	top: 0;
 	left: 0;
 	z-index: 1000000;
@@ -122,7 +122,7 @@ CSS INDEX
 	width: 70px;
 	height: 70px;
 	background: transparent;
-	border: 10px solid var(--blackDesH2);
+	border: 10px solid var(--white);
 	border-top: transparent;
 	border-bottom: transparent;
 	border-radius: 50%;
@@ -659,26 +659,30 @@ span.marking {
     margin-bottom: 30px;
 }
 .grow_container .grow_content {
-    background: var(--blackH1);
+    background: #003E51;
     position: relative;
     padding: 100px 80px;
     z-index: 0;
 }
 .grow_container .grow_items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 60px;
+    justify-content: center;
+    text-align: center;
 }
 .grow_container .grow_items .grow_item {
     overflow: hidden;
 }
 .grow_item .content h4 {
     color: var(--white);
-    line-height: 29px;
-    margin-bottom: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Albert Sans';
 }
 .grow_item .content p {
     color: var(--whiteDes);
@@ -936,6 +940,10 @@ span.marking {
     position: relative;
     overflow: hidden;
 }
+.cta3 {
+    background: #003E51;
+    z-index: 0;
+}
 .cta .cta_wrapper {
     background: url("../images/banner/cta-banner.png");
     background-repeat: no-repeat;
@@ -946,6 +954,22 @@ span.marking {
     z-index: 0;
     overflow: hidden;
 }
+.cta .cta_wrapper2 {
+    padding: 100px 0px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background-color: #003E51;
+}
+
+.cta3 .cta_container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
 .cta .cta_wrapper::after {
     content: '';
     position: absolute;
@@ -959,6 +983,7 @@ span.marking {
 .cta_container {
     max-width: 470px;
 }
+
 .cta_container .section_header {
     margin-bottom: 40px;
 }
@@ -1796,7 +1821,7 @@ span.marking {
     object-fit: cover;
 }
 .bd_post_info .profile .name h4 {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 36px;
     line-height: 120%;
     text-transform: capitalize;
@@ -1809,11 +1834,12 @@ span.marking {
 .bd_post_info .publish_date .thumb {
     width: 40px;
     height: 40px;
-    background: var(--yellowH1);
+    background: #003E51;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 .bd_post_info .publish_date .thumb >* {
     font-size: 16px;
@@ -1826,7 +1852,8 @@ span.marking {
     margin-bottom: 60px;
 }
 .bd_content .content {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
+    font-family: 'Albert Sans';
 }
 .bd_content .content p {
     font-family: 'Urbanist', sans-serif;
@@ -1910,7 +1937,7 @@ span.marking {
     font-weight: 800;
 }
 .bd_info p a.name:hover {
-    color: var(--yellowH1);
+    color: #003E51;
 }
 .bd_info .share {
     display: flex;
@@ -1935,8 +1962,8 @@ span.marking {
     line-height: 100%;
 }
 .bd_info .share ul li a:hover {
-    background: var(--yellowH1);
-    color: var(--blackH1);
+    background: #003E51;
+    color: var(--white);
 }
 /*---------------------------
 7.2) blog details area ends here
@@ -3163,4 +3190,36 @@ span.underline2 {
     text-align: center;
     max-width: 700px;
     margin: 0 auto;
+}
+
+.d-grid2 {
+    display: grid;
+    justify-content: end;
+}
+
+.contact-button {
+    border: none !important;
+    border-radius: 0;
+    padding: 0px 20px;
+    width: auto;
+    height: 60px;
+    background: #F8F8F8;
+    color: #000;
+}
+
+.cta3 .section_heading2 {
+    color: var(--white);
+    margin-bottom: 16px;
+    font-family: 'Albert Sans';
+}
+
+.cta3 .cta_container p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--whiteDes);
+    font-family: 'Albert Sans';
+}
+
+.pb-60px{
+    padding-bottom: 60px;
 }
