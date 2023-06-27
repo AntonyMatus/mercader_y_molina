@@ -25,7 +25,7 @@
                 <div class="card-body">
 
                     <div class="d-block " style="text-align: end">
-                        <a href="{{route('categories.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear blog</a>
+                        <a href="{{route('categories.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear Categoria</a>
                     </div>
                     
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\admin\AuthorController;
 use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\CategoryController;
 use App\Http\Controllers\PublicController;
@@ -30,5 +31,6 @@ Route::post('/categories/create', [CategoryController::class, 'store'])->name('c
 
 Route::resources([
     'categories' => CategoryController::class,
-    'Blogs' => BlogController::class
+    'Blogs' => BlogController::class,
+    'Authors' => AuthorController::class
 ]);

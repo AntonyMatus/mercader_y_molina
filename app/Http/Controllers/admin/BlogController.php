@@ -15,6 +15,8 @@ class BlogController extends Controller
     {
         $posts =  Post::all();
         return view('pages.blogs.index', ['posts' => $posts]);
+
+        var_dump($posts);
     }
 
     /**

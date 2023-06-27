@@ -10,10 +10,10 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="page-title-box">
-                <h4 class="page-title">Blogs</h4>
+                <h4 class="page-title">Autores</h4>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Inicio</a></li>
-                    <li class="breadcrumb-item active">Blogs</li>
+                    <li class="breadcrumb-item active">Autores</li>
                 </ol>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 <div class="card-body">
 
                     <div class="d-block " style="text-align: end">
-                        <a href="{{route('categories.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear blog</a>
+                        <a href="{{route('Authors.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear Autor</a>
                     </div>
                     
 
@@ -33,26 +33,23 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Titulo</th>
-                            <th>Categoria</th>
-                            <th>fecha</th>
+                            <th>Nombre</th>
+                            <th>Imagen</th>
                             <th>Acciones</th>
                         </tr>
                         </thead>
 
-
                         <tbody>
-                        @foreach ($posts as $post )
+                        @foreach ($authors as $author )
                         <tr>
-                            <td>{{$post->id}}</td>
-                            <td> {{$post->title}}</td>
-                            <th>{{$post->category->name}}</th>
-                            <th>{{$post->publish_date}}</th>
+                            <td>{{$author->id}}</td>
+                            <td> {{$author->name}} </td>
+                            <td> <img src="{{asset('storage/autors/'.$author->cover_image)}}" alt="" width="120"> </td>
                             <td> 
-                                <form action="{{route('categories.destroy', [$post])}}" method="POST">
+                                <form action="{{route('Authors.destroy', [$author])}}" method="POST">
                                     @method("delete")
                                     @csrf
-                                    <a href="{{route('categories.edit',[$post])}}" type="button" class="btn btn-success waves-effect waves-light"><i class="fas fa-pencil-alt"></i>&nbsp; Editar </a>
+                                    <a href="{{route('Authors.edit',[$author])}}" type="button" class="btn btn-success waves-effect waves-light"><i class="fas fa-pencil-alt"></i>&nbsp; Editar </a>
                                     <button type="submit" class="btn btn-danger waves-effect waves-light"><i class="fas fa-trash-alt"></i>&nbsp; Eliminar</button>
                                 </form>
                             </td>

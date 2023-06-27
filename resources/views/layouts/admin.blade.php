@@ -94,6 +94,14 @@
                                     </ul>
                                 </li>
                                 <li>
+                                    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-clipboard-outline"></i><span> Autores <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                    <ul class="submenu">
+                                        <li><a href="{{route('Authors.index')}}">Listado</a></li>
+                                        <li><a href=" {{route('Authors.create')}} ">Crear Autor</a></li>
+    
+                                    </ul>
+                                </li>
+                                <li>
                                     <a 
                                         class="waves-effect"
                                         onclick="event.preventDefault();
