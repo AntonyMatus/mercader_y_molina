@@ -1,7 +1,63 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="container">
+
+<div class="wrapper-page">
+
+    <div class="card">
+        <div class="card-body">
+
+            <h3 class="text-center m-0">
+                <a href="index.html" class="logo logo-admin"><img src="{{asset('assets/images/logo/mercader_logo_nav.png')}}" width="150" alt="logo"></a>
+            </h3>
+
+            <div class="p-3">
+                <h4 class="text-muted font-18 m-b-5 text-center">Bienvenido de nuevo!</h4>
+                <p class="text-muted text-center">inicie sesión para continuar con Mercader & Molina.</p>
+
+                <form class="form-horizontal m-t-30" action="{{ route('login') }}" method="POST">
+                    @csrf
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="username" placeholder="Enter username" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userpassword">Password</label>
+                        <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" id="userpassword" placeholder="Enter password" required autocomplete="current-password">
+                    </div>
+
+                    <div class="form-group row m-t-20">
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customControlInline" {{ old('remember') ? 'checked' : '' }}>
+                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="col-6 text-right">
+                            <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log In</button>
+                        </div>
+                    </div>
+
+                   
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="m-t-40 text-center">
+        <p>© 2023 - Mercade & Molina - Desarrollado por <a href="https://www.buho-solutions.com/">Buho Solutions</a></p>
+    </div>
+
+</div>
+
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,5 +125,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Author;
+use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 
@@ -24,7 +26,9 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        $autors = Author::all();
+        $categorias = Category::all();
+        return view('pages.blogs.create', compact('autors','categorias'));
     }
 
     /**
@@ -38,17 +42,17 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
-        //
-    }
+    
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
     {
-        //
+        $autors = Author::all();
+        $categorias = Category::all();
+
+        return view('pages.blogs.edit',compact('autors','categorias'));
     }
 
     /**
@@ -64,6 +68,6 @@ class BlogController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        
     }
 }

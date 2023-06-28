@@ -82,7 +82,7 @@
                                     <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-clipboard-text"></i><span> Blogs <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                                     <ul class="submenu">
                                         <li><a href="{{route('Blogs.index')}}">Listado</a></li>
-                                        <li><a href="#!">Crear Blog</a></li>
+                                        <li><a href="{{route('Blogs.create')}}">Crear Blog</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -153,6 +153,7 @@
         <script src="{{asset('admin/assets/js/metisMenu.min.js')}}"></script>
         <script src="{{asset('admin/assets/js/jquery.slimscroll.js')}}"></script>
         <script src="{{asset('admin/assets/js/waves.min.js')}}"></script>
+
         <!-- App js -->
         <script src="{{asset('admin/assets/js/app.js')}}"></script>
         @yield('script')

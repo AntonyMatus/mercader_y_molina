@@ -1,0 +1,65 @@
+@extends('layouts.admin')
+
+@section('content')
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-title-box">
+                <h4 class="page-title">Editar Autor</h4>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ route('Authors.index') }}">Autores</a></li>
+                    <li class="breadcrumb-item active">Editar Autor</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card m-b-20">
+                <div class="card-body text-center">
+                    <form method="POST" action="{{route("Authors.update", [$autor])}}" enctype="multipart/form-data">
+                        @method('PUT')
+                        @csrf
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-left">
+                                <div class="form-group">
+                                    <label>Nombre</label>
+                                    <input type="text" class="form-control"  name="name" required placeholder="Escriba el nombre" value="{{$autor->name}}"/>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="">Imagen del cliente</label> <br>
+                                    <img src="{{asset('storage/'.$autor->cover_image)}}" width="120" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-left">
+                                <div class="form-group">
+                                    <label>Imagen Autor</label>
+                                    <input type="file" name="cover_image" id="foto">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mb-0">
+                            <div>
+                                <button type="submit" class="btn btn-client waves-effect waves-light mr-1">
+                                    Crear
+                                </button>
+                                <a  class="btn btn-secondary waves-effect" href="{{route('Authors.index')}}">
+                                    Cancel
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endsection

@@ -32,14 +32,14 @@
                             <div class="col-md-6 text-left">
                                 <div class="form-group">
                                     <label>Imagen Autor</label>
-                                    <input type="file" name="cover_img" id="foto">
+                                    <input type="file" name="cover_image" id="foto">
                                 </div>
                             </div>
                         </div>
                         
                         <div class="form-group mb-0">
                             <div>
-                                <button type="submit" name="register-btn" class="btn btn-client waves-effect waves-light mr-1">
+                                <button type="submit" class="btn btn-client waves-effect waves-light mr-1">
                                     Crear
                                 </button>
                                 <a  class="btn btn-secondary waves-effect" href="{{route('Authors.index')}}">

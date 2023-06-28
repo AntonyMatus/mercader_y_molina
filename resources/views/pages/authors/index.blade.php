@@ -44,7 +44,7 @@
                         <tr>
                             <td>{{$author->id}}</td>
                             <td> {{$author->name}} </td>
-                            <td> <img src="{{asset('storage/autors/'.$author->cover_image)}}" alt="" width="120"> </td>
+                            <td> <img src="{{asset('storage/'.$author->cover_image)}}" alt="" width="120"> </td>
                             <td> 
                                 <form action="{{route('Authors.destroy', [$author])}}" method="POST">
                                     @method("delete")

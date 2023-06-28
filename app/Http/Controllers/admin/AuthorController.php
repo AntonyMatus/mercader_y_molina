@@ -39,22 +39,25 @@ class AuthorController extends Controller
     {
         $datosAutor = $request->except('_token');
         
-        $newAutor = new Author();
-        $newAutor->name = $request->name;
-       if($request->hasfile('cover_img')){
-            // $datosAutor['cover_img'] = $request->file('cover_img')->store('autors', 'public');
-            //     // save new imagen
-                $image = $request->file('cover_img');
-                $filename = $this->storeFile($image, 'autors');
-                $image_file = $filename;
+        if($request->hasfile('cover_image')){
+            $datosAutor['cover_image']= $request->file('cover_image')->store('autors', 'public');
+        }
 
-                $newAutor->cover_image = $filename;
+        Author::insert($datosAutor);
+       
 
-       }
-       $newAutor->save();
+
+    //    if($request->hasfile('cover_img')){
+    //             $image = $request->file('cover_img');
+    //             $filename = $this->storeFile($image, 'autors');
+    //             $image_file = $filename;
+    //             $newAutor->cover_image = $filename;
+
+    //    }
+    //    
         $authors = Author::all();
         return view('pages.authors.index', ['authors' => $authors]);
-
+       
     }
 
     /**
@@ -67,7 +70,8 @@ class AuthorController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $autor = Author::find($id);
+        return view('pages.authors.edit', ['autor' => $autor]);
     }
 
     /**
@@ -75,7 +79,26 @@ class AuthorController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $datosAutor = request()->except(['_token', '_method']);
+
+        if($request->hasfile('cover_image')){
+            $autor = Author::findOrFail($id);
+
+            Storage::delete('public/'.$autor->cover_image);
+
+            $datosAutor['cover_image']= $request->file('cover_image')->store('autors', 'public');
+        }
+
+
+       Author::where('id', '=', $id)->update($datosAutor);
+
+        $autor = Author::findOrFail($id);
+
+
+        $authors = Author::all();
+        return view('pages.authors.index', ['authors' => $authors]);
+
+       
     }
 
     /**
@@ -83,7 +106,15 @@ class AuthorController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $autor = Author::find($id);
+
+        if(Storage::delete('public/'.$autor->cover_image)){
+            $autor->delete();
+        }
+
+        $authors = Author::all();
+        return view('pages.authors.index', ['authors' => $authors]);
+
     }
 
     public function storeFile($file, $path)
