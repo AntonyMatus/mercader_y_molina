@@ -8,7 +8,7 @@
         <title>Mercader & Molina - Dashboard</title>
         <meta content="Admin Dashboard" name="description" />
         <meta content="Themesbrand" name="author" />
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="{{asset('assets/images/icon/favicon.png')}}">
  
         <link href="{{asset('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
         <link href="{{asset('admin/assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
                             <i>
                                 <img
                                     loading="lazy"
-                                    src="{{ asset('assets/images/icon/favicon.png') }}"
+                                    src="{{ asset('assets/images/icon/logo-white.png') }}"
                                     class="img-fluid" 
                                     width="60"
                                 />
@@ -86,7 +86,7 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-clipboard-outline"></i><span> Categorias <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-view-list"></i><span> Categorias <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                                     <ul class="submenu">
                                         <li><a href="{{route('categories.index')}}">Listado</a></li>
                                         <li><a href=" {{route('categories.create')}} ">Crear categoria</a></li>
@@ -98,6 +98,14 @@
                                     <ul class="submenu">
                                         <li><a href="{{route('Authors.index')}}">Listado</a></li>
                                         <li><a href=" {{route('Authors.create')}} ">Crear Autor</a></li>
+    
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="waves-effect"><i class="far fa-user-circle"></i><span> Usuarios <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                    <ul class="submenu">
+                                        <li><a href="{{route('Users.index')}}">Listado</a></li>
+                                        <li><a href=" {{route('Users.create')}} ">Crear Usuario</a></li>
     
                                     </ul>
                                 </li>

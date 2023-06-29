@@ -28,7 +28,7 @@
                             <div class="bd_post_info">
                                 <div class="profile" data-aos="fade-up">
                                     <div class="thumb">
-                                        <img loading="lazy" src="https://via.placeholder.com/50" {{--    {{ asset('storage/authors/' . $post->author->cover_image) }} --}} alt="Foto del autor">
+                                        <img loading="lazy" src="{{ asset('storage/' . $post->author->cover_image) }}"  alt="Foto del autor">
                                     </div>
                                     <div class="name">
                                         <h4 class="urbanist">{{ $post->author->name }}</h4>
@@ -43,19 +43,13 @@
                             </div>
                             <div class="bd_content">
                                 <div class="thumb text-center" data-aos="fade-up">
-                                    <img loading="lazy" src="https://via.placeholder.com/500x400" {{-- {{ asset('storage/blog/' . $post->cover_image) }}"--}} alt="Imagen de portada">
+                                    <img loading="lazy" src="{{ asset('storage/blogs/' . $post->cover_image) }}"  alt="Imagen de portada">
                                 </div>
                                 <div class="content">
                                     {!! $post->body !!}
                                 </div>
-                                <div class="testimonial">
-                                    @foreach($post->images as $image)
-                                        <div class="single_thumb" data-aos="fade-up">
-                                            <img loading="lazy" src="{{ asset('storage/extra_images/' . $image->filename) }}" alt="Imagen extra">
-                                        </div>
-                                    @endforeach
-                                </div>
-                                <div class="bd_info">
+                                
+                                <div class="bd_info mt-5">
                                     <p data-aos="fade-up">
                                         Publicado el <span class="date"> {{ $post->publish_date }}</span> por <a class="name">{{ $post->author->name }}</a>
                                     </p>
@@ -111,7 +105,7 @@
                                     <div class="blog_item" data-aos="fade-up" onclick="redirectRoute('{{ route('single_blog') }}?post_id={{ $item->id }}')">
                                         <div class="blog_content">
                                             <div class="thumb">
-                                                <img loading="lazy" src="{{ asset('storage/blog/' . $item->cover_image) }}" alt="Imagen de portada">
+                                                <img loading="lazy" src="{{ asset('storage/blogs/' . $item->cover_image) }}" alt="Imagen de portada">
                                             </div>
                                             <div class="content">
                                                 <div class="button">

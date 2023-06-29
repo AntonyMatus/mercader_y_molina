@@ -46,7 +46,7 @@
                             <td> {{$author->name}} </td>
                             <td> <img src="{{asset('storage/'.$author->cover_image)}}" alt="" width="120"> </td>
                             <td> 
-                                <form action="{{route('Authors.destroy', [$author])}}" method="POST">
+                                <form class="formulario-eliminar" action="{{route('Authors.destroy', [$author])}}" method="POST">
                                     @method("delete")
                                     @csrf
                                     <a href="{{route('Authors.edit',[$author])}}" type="button" class="btn btn-success waves-effect waves-light"><i class="fas fa-pencil-alt"></i>&nbsp; Editar </a>
@@ -69,4 +69,28 @@
     <script src="{{asset('plugins/datatables/jquery.dataTables.min.js')}}"></script>
     <script src="{{asset('plugins/datatables/dataTables.bootstrap4.min.js')}}"></script>
     <script src="{{asset('admin/assets/pages/datatables.init.js')}}"></script>
+
+    <script>
+        $('.formulario-eliminar').submit(function(e){
+            e.preventDefault();
+
+            Swal.fire({
+            title: '¿Estás seguro?',
+            text: "Este blog de eliminara definitivamente",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: '¡Si, Eliminar!',
+            cancelButtonText: 'Cancelar'
+            }).then((result) => {
+            if (result.isConfirmed) {
+                
+                this.submit();
+            }
+            })
+        });
+        
+        
+    </script>
 @endsection

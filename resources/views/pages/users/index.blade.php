@@ -11,10 +11,10 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="page-title-box">
-                <h4 class="page-title">Blogs</h4>
+                <h4 class="page-title">Usuarios</h4>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}">Inicio</a></li>
-                    <li class="breadcrumb-item active">Blogs</li>
+                    <li class="breadcrumb-item active">Usuarios</li>
                 </ol>
             </div>
         </div>
@@ -26,34 +26,37 @@
                 <div class="card-body">
 
                     <div class="d-block " style="text-align: end">
-                        <a href="{{route('Blogs.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear blog</a>
+                        <a href="{{route('Users.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear usuario</a>
                     </div>
-                    
-
                     <table id="datatable" class="table table-bordered dt-responsive nowrap text-center" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Titulo</th>
-                            <th>Categoria</th>
-                            <th>fecha</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Role</th>
                             <th>Acciones</th>
                         </tr>
                         </thead>
-
-
                         <tbody>
-                        @foreach ($posts as $post )
+                        @foreach ($users as $user )
                         <tr>
-                            <td>{{$post->id}}</td>
-                            <td> {{$post->title}}</td>
-                            <th>{{$post->category->name}}</th>
-                            <th>{{$post->publish_date}}</th>
+                            <td>{{$user->id}}</td>
+                            <td> {{$user->name}}</td>
+                            <th>{{$user->email}}</th>
+                            <th>
+                                @if ($user->role === 1)
+                                    <span class="badge badge-success">Administrador</span>
+                                @elseif ($user->role === 0)
+                                    <span class="badge badge-info">Usuario</span>    
+                                @endif
+                            
+                            </th>
                             <td> 
-                                <form class="formulario-eliminar" action="{{route('Blogs.destroy', [$post])}}" method="POST">
+                                <form class="formulario-eliminar" action="{{route('Users.destroy', [$user])}}" method="POST">
                                     @method("delete")
                                     @csrf
-                                    <a href="{{route('Blogs.edit',[$post])}}" type="button" class="btn btn-success waves-effect waves-light"><i class="fas fa-pencil-alt"></i>&nbsp; Editar </a>
+                                    <a href="{{route('Users.edit',[$user])}}" type="button" class="btn btn-success waves-effect waves-light"><i class="fas fa-pencil-alt"></i>&nbsp; Editar </a>
                                     <button type="submit" class="btn btn-danger waves-effect waves-light"><i class="fas fa-trash-alt"></i>&nbsp; Eliminar</button>
                                 </form>
                             </td>

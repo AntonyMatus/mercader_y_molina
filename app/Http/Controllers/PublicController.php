@@ -19,9 +19,8 @@ class PublicController extends Controller
                         ->take(2)
                         ->get();
                         
-        $services = Service::all();
-
-        return view('pages.index', compact('posts', 'services'));
+        
+        return view('pages.index', compact('posts'));
     }
 
 

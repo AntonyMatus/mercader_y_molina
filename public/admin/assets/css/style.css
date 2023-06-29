@@ -3517,4 +3517,12 @@ Invoice
     overflow: inherit !important;
   }
 }
+
+.btn-client, .btn-client:hover{
+  background-color: #003E51;
+  border: 1px solid #003E51;
+  color: #ffffff;
+}
+
+
 /*# sourceMappingURL=style.css.map */

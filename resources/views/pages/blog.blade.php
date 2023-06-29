@@ -90,7 +90,7 @@
                                         <div class="blog_item" data-aos="fade-up" onclick="redirectRoute('{{ route('single_blog') }}?post_id={{ $post->id }}')">
                                             <div class="blog_content">
                                                 <div class="thumb">
-                                                    <img lazy="loading" src="{{ asset('storage/blog/' . $post->cover_image) }}" alt="Imagen de portada">
+                                                    <img lazy="loading" src="{{ asset('storage/blogs/' . $post->cover_image) }}" alt="Imagen de portada">
                                                 </div>
                                                 <div class="content">
                                                     <div class="button">
@@ -142,7 +142,7 @@
                                     <div class="blog_item" data-aos="fade-up" onclick="redirectRoute('{{ route('single_blog') }}?post_id={{ $post->id }}')">
                                         <div class="blog_content">
                                             <div class="thumb">
-                                                <img lazy="loading" src="{{ asset('storage/blog/' . $post->cover_image) }}" alt="Imagen de portada">
+                                                <img lazy="loading" src="{{ asset('storage/blogs/' . $post->cover_image) }}" alt="Imagen de portada">
                                             </div>
                                             <div class="content">
                                                 <div class="button">

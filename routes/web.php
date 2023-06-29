@@ -3,7 +3,9 @@
 use App\Http\Controllers\admin\AuthorController;
 use App\Http\Controllers\admin\BlogController;
 use App\Http\Controllers\admin\CategoryController;
+use App\Http\Controllers\admin\UserController as AdminUserController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,5 +34,6 @@ Route::post('/categories/create', [CategoryController::class, 'store'])->name('c
 Route::resources([
     'categories' => CategoryController::class,
     'Blogs' => BlogController::class,
-    'Authors' => AuthorController::class
+    'Authors' => AuthorController::class,
+    'Users' => AdminUserController::class
 ]);
