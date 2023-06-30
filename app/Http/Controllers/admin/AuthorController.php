@@ -21,7 +21,8 @@ class AuthorController extends Controller
     public function index()
     {
         $authors = Author::all();
-        return view('pages.authors.index', ['authors' => $authors]);
+        $message = '';
+        return view('pages.authors.index', ['authors' => $authors])->with('message',$message);
     }
 
     /**
@@ -55,8 +56,9 @@ class AuthorController extends Controller
 
     //    }
     //    
+        $message = 'El Autor ha sido creado con exito!';
         $authors = Author::all();
-        return view('pages.authors.index', ['authors' => $authors]);
+        return view('pages.authors.index', ['authors' => $authors])->with('message', $message);
        
     }
 
@@ -94,9 +96,10 @@ class AuthorController extends Controller
 
         $autor = Author::findOrFail($id);
 
+        $message = 'El Autor ha sido actualizado con exito!';
 
         $authors = Author::all();
-        return view('pages.authors.index', ['authors' => $authors]);
+        return view('pages.authors.index', ['authors' => $authors])->with('message', $message);
 
        
     }

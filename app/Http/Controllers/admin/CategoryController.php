@@ -18,7 +18,8 @@ class CategoryController extends Controller{
     public function index()
     {
         $categorias =  Category::all();
-        return view('pages.categories.index', ['categorias' => $categorias]);
+        $message='';
+        return view('pages.categories.index', ['categorias' => $categorias])->with('message', $message);
     }
 
     /**
@@ -38,8 +39,11 @@ class CategoryController extends Controller{
         $newCategory->name = $request->name;
         $newCategory->save();
 
+
+        $message = 'La categoria ha sido creado con exito!';
+
         $categorias =  Category::all();
-        return view('pages.categories.index', ['categorias' => $categorias]);
+        return view('pages.categories.index', ['categorias' => $categorias])->with('message', $message);
     }
 
     /**
@@ -70,8 +74,9 @@ class CategoryController extends Controller{
         $category->name = $request->name;
         $category->save();
 
+        $message = 'La categoria ha sido actualizado con exito!';
         $categorias =  Category::all();
-        return view('pages.categories.index', ['categorias' => $categorias]);
+        return view('pages.categories.index', ['categorias' => $categorias])->with('message',$message);
     }
 
     /**

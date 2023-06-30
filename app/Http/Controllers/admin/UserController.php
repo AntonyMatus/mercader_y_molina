@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
     /**
      * Display a listing of the resource.
      */
@@ -34,13 +38,14 @@ class UserController extends Controller
         request()->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required','string','email','max:255','unique:users'],
-            'password' => ['required', 'string']
+            'password' => ['required', 'string'],
+            'is_admin' => ['required']
         ]);
 
         $newUser = new User();
         $newUser->name = $request->name;
         $newUser->email = $request->email;
-        $newUser->role = $request->role;
+        $newUser->is_admin = $request->is_admin;
         $newUser->password = Hash::make($request->password);
 
         $newUser->save();
@@ -63,7 +68,10 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        //
+
+        $user = User::find($id);
+
+        return view('pages.users.edit', compact('user'));
     }
 
     /**
@@ -71,7 +79,27 @@ class UserController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        request()->validate([
+            'name' => ['required'],
+            'email' => ['required'],
+            'is_admin' => ['required']
+        ]);
+
+        $updatePassword = $request->updatePassword;
+        
+        $user = User::find($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->is_admin = $request->is_admin;
+
+        if($updatePassword){
+            $user->password = Hash::make($request->password);
+        }
+        $user->save();
+
+        // return response()->json($request->all());
+        $users = User::all();
+        return view('pages.users.index', compact('users'));
     }
 
     /**
@@ -79,6 +107,10 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $user = User::find($id);
+        $user->delete();
+
+        $users = User::all();
+        return view('pages.users.index', compact('users'));
     }
 }

@@ -101,6 +101,16 @@
     
                                     </ul>
                                 </li>
+                                @if (auth()->user()->is_admin  === 0)
+                                <li class="d-none">
+                                    <a href="javascript:void(0);" class="waves-effect"><i class="far fa-user-circle"></i><span> Usuarios <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                    <ul class="submenu">
+                                        <li><a href="{{route('Users.index')}}">Listado</a></li>
+                                        <li><a href=" {{route('Users.create')}} ">Crear Usuario</a></li>
+    
+                                    </ul>
+                                </li>
+                                @elseif (auth()->user()->is_admin == 1)
                                 <li>
                                     <a href="javascript:void(0);" class="waves-effect"><i class="far fa-user-circle"></i><span> Usuarios <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                                     <ul class="submenu">
@@ -109,6 +119,8 @@
     
                                     </ul>
                                 </li>
+                                @endif
+                                
                                 <li>
                                     <a 
                                         class="waves-effect"

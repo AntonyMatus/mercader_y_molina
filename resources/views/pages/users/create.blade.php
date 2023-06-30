@@ -1,7 +1,6 @@
 @extends('layouts.admin')
 
 @section('style')
-    
     <link href="{{asset('plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" />
 @endsection
 
@@ -18,6 +17,16 @@
         </div>
     </div>
 
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <h6>Por favor corrige los siguientes errores:</h6>
+            <ul>
+                @foreach ($errors->all() as $error )
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>  
+    @endif
     <div class="row justify-content-center">
         <div class="col-lg-12">
             <div class="card m-b-20">
@@ -41,7 +50,7 @@
                             <div class="col-md-6 text-left">
                                 <div class="form-group">
                                     <label>Rol de usuario</label>
-                                    <select class="form-control" name="category_id" id="category_id">
+                                    <select class="form-control" name="is_admin" id="is_admin">
                                         <option value="1">Administrador</option>
                                         <option value="0">Usuario</option>
                                     </select>

@@ -28,6 +28,15 @@
                         <a href="{{route('Authors.create')}}" type="button" class="btn clientButton waves-effect waves-light mb-5 text-right ">Crear Autor</a>
                     </div>
                     
+                    @if ($message)
+                    <div class="alert alert-info alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>{{$message}}</strong>
+                    </div>
+                        
+                    @endif
 
                     <table id="datatable" class="table table-bordered dt-responsive nowrap text-center" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead>

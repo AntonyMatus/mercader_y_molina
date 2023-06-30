@@ -19,7 +19,7 @@
                     @csrf
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" id="username" placeholder="Enter username" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" id="username" placeholder="Enter username" value="{{ old('email') }}" required autocomplete="email" autofocus>
                         @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -36,11 +36,11 @@
                         <div class="col-6">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customControlInline" {{ old('remember') ? 'checked' : '' }}>
-                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                <label class="custom-control-label" for="customControlInline">Recordarme!</label>
                             </div>
                         </div>
                         <div class="col-6 text-right">
-                            <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log In</button>
+                            <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Iniciar Sesion</button>
                         </div>
                     </div>
 

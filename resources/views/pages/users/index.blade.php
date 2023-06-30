@@ -45,9 +45,9 @@
                             <td> {{$user->name}}</td>
                             <th>{{$user->email}}</th>
                             <th>
-                                @if ($user->role === 1)
+                                @if ($user->is_admin === 1)
                                     <span class="badge badge-success">Administrador</span>
-                                @elseif ($user->role === 0)
+                                @elseif ($user->is_admin === 0)
                                     <span class="badge badge-info">Usuario</span>    
                                 @endif
                             
@@ -81,7 +81,7 @@
         <script>
             Swal.fire(
             'Eliminado!',
-            'El blog se elimino con éxito.',
+            'El Usuario se elimino con éxito.',
             'success'
             )
         </script>        
@@ -92,7 +92,7 @@
 
             Swal.fire({
             title: '¿Estás seguro?',
-            text: "Este blog de eliminara definitivamente",
+            text: "Este Usuario se eliminara definitivamente",
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
