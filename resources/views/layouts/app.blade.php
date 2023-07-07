@@ -138,7 +138,7 @@
                     </ul>
                 </div>
                 <div class="copyright_text">
-                    <p>© Copyright 2022, All Rights Reserved by Pixency</p>
+                    <p>© Copyright 2023, Desarrollado por  <a href="https://www.buho-solutions.com/">Búho Solutions</a> </p>
                 </div>
                 </div>
             </div>

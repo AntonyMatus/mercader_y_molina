@@ -684,9 +684,9 @@ Extra large: ---------
 @media screen and (max-width: 1400px){
     /* common  */
     /* sectiuon padding area here  */
-    .sp_120{
-        padding: 100px 0px;
-    }
+    /* .sp_120{
+        padding: 0px 0px;
+    } */
     .sp_Top120{
         padding-top: 100px;
     }
@@ -725,7 +725,7 @@ Extra large: ---------
     1.2-1400) hero area here
     ***********************/
     .hero_wrapper {
-        padding: 120px 0px;
+        padding: 80px 0px;
     }
     .hero_container .hero_header {
         font-size: 48px;
@@ -772,7 +772,7 @@ Extra large: ---------
     1.5-1400) about features area here
     ***********************/
     .abf_container .abf_content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 60px;
     }
 

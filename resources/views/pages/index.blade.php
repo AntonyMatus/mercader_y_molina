@@ -11,15 +11,15 @@
           <div class="hero_wrapper">
             <!-- container area here  -->
             <div class="container">
-              <div class="row">
-                <div class="col-lg-6">
+              <div class="row justify-content-center ">
+                <div class="col-lg-9">
                   <div class="hero_container">
 
                     <h4 class="hero_sub-title">Tu Jurídico de confianza</h4>
                     <h1 class="hero_header" data-aos="fade-up">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                      Comprometidos con la Excelencia y Dedicados a brindar asesoría jurídica integral.</h1>
                     <p class="hero_des" data-aos="fade-up">
-                        Lorem ipsum dolor sit amet, consectetur  adipiscing elit dolor sit amet, consectetur adipiscing elit
+                      Bienvenido a Mercader & Molina Abogados
                     </p>
                     <ul class="hero_button" data-aos="fade-up">
                       <li>
@@ -41,7 +41,7 @@
   <!--== hero area ends here ==-->
 
   <!--== about features area here ==-->
-  <section class="about_features sp_120">
+  <section class="about_features ">
     <div class="abf_wrapper">
       <div class="container">
         <div class="row">
@@ -50,9 +50,9 @@
               <!-- feature items area here  -->
               <div class="abf_items">
                 <div class="abf_item">
-                  <div class="abf_content">
+                  <div class="row d-flex">
                     <!-- main content  -->
-                    <div class="content ">
+                    <div class="col-md-5 content ">
                       <!-- section header area here  -->
                       <div class="section_header">
                         <div class="d-flex2 mb-3">
@@ -66,7 +66,7 @@
                       <!-- list  -->
                       <div class="abf_description">
                         <p data-aos="fade-up">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         </p>
                       </div>
                       <!-- button  -->
@@ -74,9 +74,71 @@
                         <button type="button" class="mainButton buttonH1">Ver servicios</button>
                       </div>
                     </div>
+                    <div class="col-md-2 d-grid justify-content-center">
+                      <div class="separador"></div>
+                    </div>
                     <!-- thumbnail image  -->
-                    <div class="thumb" data-aos="fade-up">
-                      <img src="assets/images/banner/abogados-asiaticos.png" alt="abogados-asiaticos">
+                    <div class="col-md-5 thumb" data-aos="fade-up">
+                      <div class="c_accor_content">
+                        <div class="accordion" id="accordionExample">
+                          <!-- item  -->
+                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                            <h2 id="headingOne">
+                              <button class="accordion-button albert_sans" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="margin-right-25px">01</span>
+                                Corporativo</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- item  -->
+                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                            <h2 id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="margin-right-25px">02</span>
+                                Litigio</button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- item  -->
+                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                            <h2 id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="margin-right-25px">03</span>
+                                Inmobiliario</button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- item  -->
+                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                            <h2 id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="margin-right-25px">04</span>
+                                Auditoría Legal</button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- item  -->
+                          
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -223,7 +285,7 @@
                                                 <div class="accordion-body">
                                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
                                                   <div class="d-flex2">
-                                                    <a class="link-service" href="#!">Más información </a>
+                                                    <p>Mas información</p>
                                                     <i class="fa fa-arrow-right color_client" aria-hidden="true"></i>
                                                   </div>
                                                 </div>
@@ -267,9 +329,7 @@
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="thumb aos-init aos-animate" data-aos="fade-up">
-                                        <img lazy="loading" src="assets/images/banner/servicios_mercader.png" alt="servicios_mercader">
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -305,13 +365,68 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-sm-12 col-md-6 ">
-                    <img src="assets/images/banner/themis-estatua-justicia.png" alt="">
+                  <div class="col-sm-12 col-md-6 d-grid justify-content-center ">
+                    <img src="{{asset('assets/images/banner/mercader_molina.png')}}" alt="mercader & molina">
                   </div>
               </div>
           </div>
       </div>
   </div>
+
+  <section class="news-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!--news One Single Start-->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="news-one__single">
+                    <div class="news-one__img-box">
+                        <div class="news-one__img">
+                            <img src="assets/images/blog/news-1-1.jpg" alt="">
+                        </div>
+                        <div class="news-one__content">
+                            <ul class="news-one__meta list-unstyled">
+                                <li>
+                                    <div class="thumb_icon">
+                                      <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon mercader">
+                                    </div>
+                                </li>
+                            </ul>
+                            <h3 class="news-one__title">Mauricio Mercader</h3>
+                            <p class="news-one-puesto">Director General & Socio</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--news One Single End-->
+            <!--news One Single Start-->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+              <div class="news-one__single">
+                  <div class="news-one__img-box">
+                      <div class="news-one__img">
+                          <img src="assets/images/blog/news-1-1.jpg" alt="">
+                      </div>
+                      <div class="news-one__content">
+                          <ul class="news-one__meta list-unstyled">
+                              <li>
+                                  <div class="thumb_icon">
+                                    <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon mercader">
+                                  </div>
+                              </li>
+                          </ul>
+                          <h3 class="news-one__title">Dalva Molina</h3>
+                          <p class="news-one-puesto">Director General & Socia</p>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <!--news One Single End-->
+            <!--news One Single Start-->
+            
+        </div>
+    </div>
+</section>
 
   <section class="blog latest_blog2">
     <div class="blog_wrapper">
@@ -501,5 +616,8 @@
         </div>
       </div>
     </div>
+  </section>
+  <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.912305832606!2d-89.6158952259009!3d20.99615208890005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56714d1933dff7%3A0xa8504ffe3443b006!2sC.%2013%2043-12%2C%20Itzimn%C3%A1%2C%2097100%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1688765442166!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__one"></iframe>
   </section>
 @endsection
