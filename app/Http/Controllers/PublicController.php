@@ -16,7 +16,7 @@ class PublicController extends Controller
         $posts = Post::with(['category'])
                         ->latest()
                         ->where('status', 1)
-                        ->take(2)
+                        ->take(3)
                         ->get();
                         
         

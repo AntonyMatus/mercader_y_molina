@@ -146,7 +146,7 @@
                           <div class="grow_items">
                             <div class="grow_item aos-init aos-animate" data-aos="fade-up">
                               <div class="content">
-                                <img src="https://via.placeholder.com/200" alt="" width="200px">
+                                <img src="{{ asset('assets/images/banner/mercader_molina.png') }}" alt="" width="200px">
                                 <h4>¡Agenda tu cita ahora!</h4>
                                 <button type="button" onclick="redirectRoute('{{ route("home") }}')" class="clientButton buttonH1 mt-5 monserrat fs-20px">¡Agendar ahora!</button>
                               </div>

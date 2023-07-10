@@ -362,7 +362,7 @@ header {
 .bar_container .content {
     width: 40px;
     height: 40px;
-    background: var(--blackH1);
+    background: #003E51;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3363,7 +3363,7 @@ span.underline2 {
     align-items: center;
     justify-content: center;
     top: -40px;
-    left: 35%;
+    left: 42%;
 }
 
 .news-one__meta li {
@@ -3495,7 +3495,8 @@ span.underline2 {
 .news-page {
     position: relative;
     display: block;
-    padding: 120px 0 90px;
+    padding: 120px 0 0px;
+    margin: 120px 0 120px;
 }
 
 .thumb_icon{
@@ -3515,4 +3516,27 @@ span.underline2 {
     height: 475px;
     width: 100%;
     mix-blend-mode: luminosity;
+}
+
+.numeracion {
+    font-family: 'Albert Sans';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.text_serv {
+    font-family: 'Albert Sans';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    border-bottom: 1px solid #C0C0C0;
+
 }

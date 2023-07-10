@@ -2789,6 +2789,36 @@ Small Layout: ---------
         right: 20px;
     }
 
+    .hero_container .hero_header{
+        font-size: 33px;
+    }
+
+    .hero_wrapper{
+        padding: 40px 0px 0px;
+    }
+
+    .separador{
+        width: 100vh;
+        height: 5px;
+        background: #003E51;
+        margin-top: 3rem;
+    }
+
+    .display-repons{
+        padding: 100px 0rem 100px !important;
+    }
+
+    .gap-respons {
+        gap: 8rem;
+    }
+
+    .news-one__meta{
+        left: 35%;
+    }
+
+    .footer_widget .fw_title{
+        text-align: center;
+    }
     
 }
 

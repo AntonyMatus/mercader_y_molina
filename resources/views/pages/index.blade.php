@@ -23,10 +23,10 @@
                     </p>
                     <ul class="hero_button" data-aos="fade-up">
                       <li>
-                        <button type="button" class="clientButton buttonH1">Servicios</button>
+                        <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="clientButton buttonH1">Servicios</button>
                       </li>
                       <li>
-                        <button type="button" class="transparentButton buttonH1">Contacto</button>
+                        <button onclick="redirectRoute('{{ route('index') }}#contact')" type="button" class="transparentButton buttonH1">Contacto</button>
                       </li>
                     </ul>
                   </div>
@@ -41,7 +41,7 @@
   <!--== hero area ends here ==-->
 
   <!--== about features area here ==-->
-  <section class="about_features ">
+  <section id="about" class="about_features ">
     <div class="abf_wrapper">
       <div class="container">
         <div class="row">
@@ -66,12 +66,12 @@
                       <!-- list  -->
                       <div class="abf_description">
                         <p data-aos="fade-up">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ¡Bienvenido a Mercader & Molina!, Somos un equipo altamente calificado y comprometido que se especializa en diversas áreas legales. Con una amplia experiencia en los ámbitos corporativo, litigio, inmobiliario y auditoría legal, brindamos soluciones legales integrales y eficientes para satisfacer las necesidades de nuestros clientes. Nuestro enfoque personalizado y orientado al cliente nos permite comprender a fondo los desafíos legales que enfrentan las empresas y los particulares. 
                         </p>
                       </div>
                       <!-- button  -->
                       <div class="abf_button" data-aos="fade-up">
-                        <button type="button" class="mainButton buttonH1">Ver servicios</button>
+                        <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="mainButton buttonH1">Ver servicios</button>
                       </div>
                     </div>
                     <div class="col-md-2 d-grid justify-content-center">
@@ -80,62 +80,12 @@
                     <!-- thumbnail image  -->
                     <div class="col-md-5 thumb" data-aos="fade-up">
                       <div class="c_accor_content">
-                        <div class="accordion" id="accordionExample">
-                          <!-- item  -->
-                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
-                            <h2 id="headingOne">
-                              <button class="accordion-button albert_sans" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <span class="margin-right-25px">01</span>
-                                Corporativo</button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                                
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item  -->
-                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
-                            <h2 id="headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="margin-right-25px">02</span>
-                                Litigio</button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item  -->
-                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
-                            <h2 id="headingThree">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <span class="margin-right-25px">03</span>
-                                Inmobiliario</button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item  -->
-                          <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
-                            <h2 id="headingFour">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                                <span class="margin-right-25px">04</span>
-                                Auditoría Legal</button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- item  -->
+                          <ul>
+                            <li class="text_serv"><span class="numeracion">01</span> Corporativo</li>
+                            <li class="text_serv"><span class="numeracion">02</span> Litigio</li>
+                            <li class="text_serv"><span class="numeracion">03</span> Inmobiliario</li>
+                            <li class="text_serv"><span class="numeracion">04</span> Auditoría Legal</li>
+                          </ul>
                           
                         </div>
                       </div>
@@ -151,7 +101,7 @@
   </section>
   <!--== about features area ends here ==-->
 
-  <section class="features2 sp_120">
+  <section id="servicio" class="features2 sp_120">
     <div class="features_wrapper2">
       <div class="container">
         <div class="row">
@@ -251,7 +201,7 @@
     </div>
   </section>
 
-  <section class=" sp_1202 margin pb-6rem">
+  <section id="faq" class=" sp_1202 margin pb-6rem">
     <div class="abf_wrapper">
         <div class="container">
             <div class="row">
@@ -279,48 +229,63 @@
                                             <!-- item  -->
                                             <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
                                               <h2 id="headingOne">
-                                                <button class="accordion-button albert_sans" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Lorem ipsum dolor sit amet</button>
+                                                <button class="accordion-button albert_sans" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">¿Qué servicios legales ofrece su despacho de abogados en el ámbito corporativo?</button>
                                               </h2>
                                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                                                  <div class="d-flex2">
-                                                    <p>Mas información</p>
-                                                    <i class="fa fa-arrow-right color_client" aria-hidden="true"></i>
-                                                  </div>
+                                                  <p>En Mercader & Molina, brindamos una amplia gama de servicios legales en el ámbito corporativo. Esto incluye asesoramiento en la constitución de empresas, contratos comerciales, fusiones y adquisiciones, protección de la propiedad intelectual, cumplimiento normativo, resolución de conflictos entre socios y mucho más. Nuestro objetivo es proporcionar soluciones legales sólidas y estratégicas para ayudar a las empresas a alcanzar el éxito.</p>
+                                                  
                                                 </div>
                                               </div>
                                             </div>
                                             <!-- item  -->
                                             <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
                                               <h2 id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Lorem ipsum dolor sit amet</button>
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Cómo puede ayudar su despacho de abogados en casos de litigio?</button>
                                               </h2>
                                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                                  <p>
+                                                    Contamos con un equipo de abogados litigantes experimentados que están preparados para representar sus intereses en disputas legales. Ya sea en casos de litigio civil, penal o administrativo, nuestro despacho está dedicado a proteger sus derechos y buscar la mejor resolución posible. Realizaremos un exhaustivo análisis de su caso, desarrollaremos estrategias efectivas y lo guiaremos a lo largo de todo el proceso legal.
+                                                  </p>
                                                 </div>
                                               </div>
                                             </div>
                                             <!-- item  -->
                                             <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
                                               <h2 id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Lorem ipsum dolor sit amet</button>
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">¿Qué servicios legales ofrecen en el ámbito inmobiliario?</button>
                                               </h2>
                                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                                  <p>
+                                                    En el área inmobiliaria, ofrecemos una amplia gama de servicios legales. Esto incluye la asesoría en transacciones de compra y venta de propiedades, contratos de arrendamiento, due diligence inmobiliario, resolución de conflictos en materia de propiedad, regulación urbanística y mucho más. Nuestro equipo de abogados especializados en derecho inmobiliario está comprometido en proporcionar soluciones legales eficientes y proteger sus intereses.
+                                                  </p>
                                                 </div>
                                               </div>
                                             </div>
                                             <!-- item  -->
                                             <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
                                               <h2 id="headingFour">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">Lorem ipsum dolor sit amet</button>
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">¿Qué implica la auditoría legal y cómo puede beneficiar a mi empresa?</button>
                                               </h2>
                                               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                                                  <p>
+                                                    La auditoría legal es un proceso de revisión y análisis exhaustivo de la situación legal de una empresa. Nosotros le ayudamos a identificar riesgos legales, evaluar el cumplimiento normativo, revisar contratos y acuerdos, y brindar recomendaciones para mejorar la gestión legal de su empresa. Una auditoría legal adecuada puede ayudar a prevenir problemas legales futuros, mejorar la eficiencia y minimizar riesgos legales, brindándole tranquilidad y seguridad en sus operaciones comerciales.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                                              <h2 id="headingFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">¿Cómo puedo solicitar una consulta o contratar sus servicios legales?</button>
+                                              </h2>
+                                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <p>
+                                                    Para solicitar una consulta o contratar nuestros servicios legales, puede comunicarse con nosotros a través de nuestra página de contacto o llamarnos directamente. Estaremos encantados de programar una reunión con uno de nuestros abogados expertos para discutir su caso y sus necesidades legales específicas. Durante la consulta, evaluaremos su situación y le proporcionaremos información detallada sobre cómo podemos ayudarle y cuáles son los costos asociados.
+                                                  </p>
                                                 </div>
                                               </div>
                                             </div>
@@ -375,13 +340,13 @@
 
   <section class="news-page">
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center gap-respons">
             <!--news One Single Start-->
-            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                 <div class="news-one__single">
                     <div class="news-one__img-box">
                         <div class="news-one__img">
-                            <img src="assets/images/blog/news-1-1.jpg" alt="">
+                            
                         </div>
                         <div class="news-one__content">
                             <ul class="news-one__meta list-unstyled">
@@ -391,7 +356,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <h3 class="news-one__title">Mauricio Mercader</h3>
+                            <h3 class="news-one__title">Lic. Mauricio Mercader Alonso</h3>
                             <p class="news-one-puesto">Director General & Socio</p>
                             
                         </div>
@@ -400,11 +365,11 @@
             </div>
             <!--news One Single End-->
             <!--news One Single Start-->
-            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
               <div class="news-one__single">
                   <div class="news-one__img-box">
                       <div class="news-one__img">
-                          <img src="assets/images/blog/news-1-1.jpg" alt="">
+                          
                       </div>
                       <div class="news-one__content">
                           <ul class="news-one__meta list-unstyled">
@@ -414,7 +379,7 @@
                                   </div>
                               </li>
                           </ul>
-                          <h3 class="news-one__title">Dalva Molina</h3>
+                          <h3 class="news-one__title">Mtra. Dalva Molina Verduchi</h3>
                           <p class="news-one-puesto">Director General & Socia</p>
                           
                       </div>
@@ -426,7 +391,7 @@
             
         </div>
     </div>
-</section>
+  </section>
 
   <section class="blog latest_blog2">
     <div class="blog_wrapper">
@@ -451,66 +416,28 @@
             </div>
             <div class="col-12">
               <div class="blog_items">
+                @foreach ($posts as $post)
                 <div class="blog_item aos-init aos-animate" data-aos="fade-up">
-                  <div class="blog_content">
+                  <div class="blog_content" onclick="redirectRoute('{{ route('single_blog') }}?post_id={{ $post->id }}')" >
                     <div class="thumb">
-                      <img src="assets/images/single_images/blog1.jpg" alt="">
+                      <img lazy="loading" src="{{ asset('storage/blogs/' .$post->cover_image) }}" alt="Imagen de portada">
                     </div>
                     <div class="content">
                       <div class="button">
-                        <button type="button" class="secondaryButton buttonH1">Employers</button>
-                        <h5 class="title"><a href="blog-details.html">
-                          Claves para elegir al abogado adecuado para tu caso
+                        <button type="button" class="secondaryButton buttonH1">{{ $post->category->name }}</button>
+                        <h5 class="title"><a href="{{ route('single_blog') }}?post_id={{ $post->id }}">
+                          {{ $post->title }}
                         </a></h5>
                         <hr>
                         <ul class="date">
-                          <li><span>October 27, 2022</span></li>
-                          <li><span>4 min read</span></li>
+                          <li><span>{{ $post->publish_date }}</span></li>
+                          
                         </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="blog_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                  <div class="blog_content">
-                    <div class="thumb">
-                      <img src="assets/images/single_images/blog2.jpg" alt="">
-                    </div>
-                    <div class="content">
-                      <div class="button">
-                        <button type="button" class="secondaryButton buttonH1">Employers</button>
-                        <h5 class="title"><a href="blog-details.html">
-                          ¿Cuáles son los derechos legales de los empleados en casos de despido?
-                        </a></h5>
-                        <hr>
-                        <ul class="date">
-                          <li><span>October 27, 2022</span></li>
-                          <li><span>4 min read</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="blog_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                  <div class="blog_content">
-                    <div class="thumb">
-                      <img src="assets/images/single_images/blog2.jpg" alt="">
-                    </div>
-                    <div class="content">
-                      <div class="button">
-                        <button type="button" class="secondaryButton buttonH1">Employers</button>
-                        <h5 class="title"><a href="blog-details.html">
-                          Cómo proteger tu propiedad intelectual
-                        </a></h5>
-                        <hr>
-                        <ul class="date">
-                          <li><span>October 27, 2022</span></li>
-                          <li><span>4 min read</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                @endforeach
               </div>
             </div>
           </div>
@@ -519,7 +446,9 @@
     </div>
   </section>
 
-  <section class="contact">
+  
+  
+  <section id="contact" class="contact">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">

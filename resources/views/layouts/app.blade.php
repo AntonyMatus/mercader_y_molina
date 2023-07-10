@@ -63,18 +63,18 @@
                 <!-- nav content -->
                 <div class="header_nav">
                     <ul class="navigation">
-                    <li><a href="#about">Introducción</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#faqs">Preguntas Frecuentas</a></li>
+                    <li><a href="{{route('index')}}#about">Introducción</a></li>
+                    <li><a href="{{route('index')}}#services">Servicios</a></li>
+                    <li><a href="{{route('index')}}#faqs">Preguntas Frecuentas</a></li>
                     <li><a href=" {{ route('blog')}} ">Blog</a></li>
-                    <li><a href="#contact">Contacto</a>
+                    <li><a href="{{route('index')}}#contact">Contacto</a>
                     </li>
                     </ul>
                 </div>
                 <!-- button content -->
                 <ul class="header_button">
                     <li>
-                    <button type="button" class="clientButton buttonH1">Contacto</button>
+                    <button onclick="redirectRoute('{{route('index')}}#contact')" type="button" class="clientButton buttonH1">Contacto</button>
                     </li>
                     
                 </ul>
