@@ -35,7 +35,7 @@
 <body>
     <!--== preloader area here ==-->
     <div class="preloder">
-        <div class="pre-loading"></div>
+        <img class="pre-loading" src="{{asset('assets/images/banner/mercader_molina.png')}}" alt="">
     </div>
     <!--== preloader area ends here ==-->
 
@@ -106,39 +106,38 @@
                         <img src="assets/images/logo/logo_footer.png" alt="Logo" width="240px">
                         </div>
                     </div>
-                    
-                    
                     <div class="footer_item">
-                    <div class="footer_widget">
-                        <h5 class="fw_title text-uppercase">INFORMACIÓN DE CONTACTO</h5>
-                        <ul class="fw_lists">
-                        <li class="fw_list mb-1"><i class="fa fa-location-dot text-client" aria-hidden="true"></i> 
-                            Calle 13 #43 x 12. Colonia Felipe Carrillo Puerto  <br>
-                            Mérida, Yucatán, México
-                        </li>
-                        <li class="fw_list mb-1"><i class="fa fa-envelope text-client" aria-hidden="true"></i> 
-                            informacion@mercadermolina.com</li>
-                        <li class="fw_list"><i class="fa fa-phone text-client" aria-hidden="true"></i> +52 999 437 6666</li>
-                        </ul>
-                    </div>
+                        <div class="footer_widget">
+                            <h5 class="fw_title text-uppercase">INFORMACIÓN DE CONTACTO</h5>
+                            <ul class="fw_lists">
+                                <li class="fw_list mb-1"><i class="fa fa-location-dot text-client" aria-hidden="true"></i> 
+                                    Palermo 260 A. Framboyanes <br>
+                                    Othon P Blanco Quintana Roo <br>
+                                    C.P. 77034
+                                </li>
+                                <li class="fw_list mb-1"><i class="fa fa-envelope text-client" aria-hidden="true"></i> 
+                                    informacion@mercadermolina.com</li>
+                                <li class="fw_list"><i class="fa fa-phone text-client" aria-hidden="true"></i> 
+                                    999 242 9375 |  999 335 3513 
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 </div>
                 <div class="copyright_container">
                 <div class="copyright_link">
                     <ul class="social">
-                    <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#!"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#!"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
                     <ul class="copyright_menu">
-                    <li><a href="#!">Aviso de Privacidad.</a></li>
-                    <li><a href="#!">Términos y condiciones</a></li>
+                        <li><a href="#!">Aviso de Privacidad.</a></li>
+                        <li><a href="#!">Términos y condiciones</a></li>
                     </ul>
                 </div>
                 <div class="copyright_text">
-                    <p>© Copyright 2023, Desarrollado por  <a href="https://www.buho-solutions.com/">Búho Solutions</a> </p>
+                    <p><a href="{{ route('login')}}"><i class="fa fa-user" aria-hidden="true"></i></a> © Copyright 2023, Desarrollado por  <a href="https://www.buho-solutions.com/">Búho Solutions</a> </p>
                 </div>
                 </div>
             </div>

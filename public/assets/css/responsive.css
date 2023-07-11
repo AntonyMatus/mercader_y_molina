@@ -462,7 +462,7 @@ RESPONSIVE DEVICE
 
     .abf_container .abf_content{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items: start;
         grid-gap: 100px;
     }
@@ -630,7 +630,7 @@ RESPONSIVE DEVICE
 
     .abf_container .abf_content{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items: start;
         grid-gap: 100px;
     }
@@ -1255,7 +1255,7 @@ Extra large: ---------
         bottom: 0;
         width: max-content;
         height: 100vh;
-        background: var(--clientColor);
+        background: #003E51;
         flex-direction: column;
         padding: 120px 15px 330px;
         opacity: 0;
@@ -1268,6 +1268,7 @@ Extra large: ---------
         -moz-transition: all .6s ease;
         -ms-transition: all .6s ease;
         -o-transition: all .6s ease;
+        justify-content: center;
     }
     .header_container.show{
         left: -0%;
@@ -1291,6 +1292,7 @@ Extra large: ---------
         gap: 0;
         background: transparent;
         padding: 60px 0px;
+        margin-top: 11rem;
     }
     .header .header_container .header_nav .navigation li {
         width: 100%;
@@ -1721,9 +1723,7 @@ Extra large: ---------
     .sp_1502{
         padding: 100px 0px;
     }
-    .col-lg-6{
-        width: 100% !important;
-    }
+    
 
     /*
     7) integrates-1400-------------------]
@@ -1866,7 +1866,7 @@ large layout:  ---------
         bottom: 0;
         width: max-content;
         height: 100vh;
-        background: var(--yellowH1);
+        background: #003E51;
         flex-direction: column;
         padding: 120px 15px 80px;
         opacity: 0;
@@ -1879,7 +1879,9 @@ large layout:  ---------
         -moz-transition: all .6s ease;
         -ms-transition: all .6s ease;
         -o-transition: all .6s ease;
+        justify-content: center;
     }
+
     .header_container.show{
         left: -0%;
         opacity: 1;
@@ -1909,10 +1911,10 @@ large layout:  ---------
     .header .header_container .header_nav .navigation > li > a {
         padding: 12px 0px !important;
         display: block;
-        text-align: center;
+        text-align: left;
         color: var(--white);
-        font-size: 14px;
-        line-height: 100%;
+        font-size: 23px;
+        line-height: 50px;
     }
     .header .header_container .header_nav .navigation li a:hover {
         background: var(--blackDesH2);
@@ -2550,8 +2552,17 @@ Medium Layout: ---------
     5.1-768) blog area here
     ***********************/
     .blog_items {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 40px;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 62px;
+    }
+
+    .section_heading2{
+        text-align: left;
+    }
+
+    .header_container{
+        justify-content: center;
+        background: #003E51;
     }
 
     /*
@@ -2624,7 +2635,7 @@ Medium Layout: ---------
     .features_container2 .section_header2 {
         grid-template-columns: auto;
         grid-gap: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     /***********************
@@ -2681,6 +2692,13 @@ Medium Layout: ---------
 
     .header .header_container .header_nav .navigation{
         padding: 0px;
+    }
+    .w-50{
+        width: auto !important;
+    }
+
+    .header_container .header_button{
+        margin-top: 30px;
     }
 
 }
@@ -2761,7 +2779,8 @@ Small Layout: ---------
     4.4-576) latest blog area here
     ***********************/
     .latest_blog2 .blog_items {
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1, 1fr) !important;
+
     }
     .latest_blog2 .customer_button {
         margin-top: 30px;
@@ -2817,6 +2836,17 @@ Small Layout: ---------
     }
 
     .footer_widget .fw_title{
+        text-align: center;
+    }
+
+    .services{
+        font-size: 36px;
+    }
+    .footer_widget .fw_lists .fw_list {
+        text-align: center;
+    }
+
+    .features_content2 .content h4{
         text-align: center;
     }
     

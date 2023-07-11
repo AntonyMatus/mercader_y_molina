@@ -52,7 +52,7 @@
                 <div class="abf_item">
                   <div class="row d-flex">
                     <!-- main content  -->
-                    <div class="col-md-5 content ">
+                    <div class="col-md-7 content ">
                       <!-- section header area here  -->
                       <div class="section_header">
                         <div class="d-flex2 mb-3">
@@ -74,11 +74,11 @@
                         <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="mainButton buttonH1">Ver servicios</button>
                       </div>
                     </div>
-                    <div class="col-md-2 d-grid justify-content-center">
+                    <div class="col-md-1 d-grid justify-content-center">
                       <div class="separador"></div>
                     </div>
                     <!-- thumbnail image  -->
-                    <div class="col-md-5 thumb" data-aos="fade-up">
+                    <div class="col-md-4 thumb" data-aos="fade-up">
                       <div class="c_accor_content">
                           <ul>
                             <li class="text_serv"><span class="numeracion">01</span> Corporativo</li>
@@ -278,10 +278,10 @@
                                               </div>
                                             </div>
                                             <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
-                                              <h2 id="headingFour">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">¿Cómo puedo solicitar una consulta o contratar sus servicios legales?</button>
+                                              <h2 id="headingfive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">¿Cómo puedo solicitar una consulta o contratar sus servicios legales?</button>
                                               </h2>
-                                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
                                                   <p>
                                                     Para solicitar una consulta o contratar nuestros servicios legales, puede comunicarse con nosotros a través de nuestra página de contacto o llamarnos directamente. Estaremos encantados de programar una reunión con uno de nuestros abogados expertos para discutir su caso y sus necesidades legales específicas. Durante la consulta, evaluaremos su situación y le proporcionaremos información detallada sobre cómo podemos ayudarle y cuáles son los costos asociados.
@@ -323,7 +323,7 @@
                                         <h4 class="mt-3 subtitle2 ">¿Deseas más <br> información? </h4>
                                     </div>
                                     <div class="customer_button aos-init aos-animate mb-4rem" data-aos="fade-up">
-                                    <button onclick="window.location='#!'" type="button" class="clientButton buttonH2 text-client">Contacto</button>
+                                    <button onclick="redirectRoute('{{ route('index') }}#contact')" type="button" class="clientButton buttonH2 text-client">Contacto</button>
                                     </div>
                                 </div>
                               </div>
@@ -446,8 +446,6 @@
     </div>
   </section>
 
-  
-  
   <section id="contact" class="contact">
     <div class="container-fluid">
       <div class="row">
@@ -462,7 +460,7 @@
                       <div class="section_header">
                         <h2 class="section_heading aos-init aos-animate" data-aos="fade-up">Pongámonos en contacto</h2>
                         <p class="desc aos-init aos-animate" data-aos="fade-up">
-                          Lorem ipsum sit constractur.
+                          Estamos para servirte
                         </p>
                       </div>
                       <!-- social  -->
@@ -528,7 +526,7 @@
                             </div>
                           </div>
                           <div class="cf_button aos-init aos-animate" data-aos="fade-up">
-                            <button type="button" class="secondaryButton buttonH1">Send Message</button>
+                            <button type="button" class="secondaryButton buttonH1">Enviar Mensaje</button>
                           </div>
                         </div>
                       </form>
@@ -546,7 +544,9 @@
       </div>
     </div>
   </section>
+
   <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.912305832606!2d-89.6158952259009!3d20.99615208890005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56714d1933dff7%3A0xa8504ffe3443b006!2sC.%2013%2043-12%2C%20Itzimn%C3%A1%2C%2097100%20M%C3%A9rida%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1688765442166!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__one"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.7096301586976!2d-88.29625652597132!3d18.54201936852107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba4f27b62fd71%3A0x9d2eba334378451d!2sCondominio%20Framboyanes%2C%2077086%20Chetumal%2C%20Q.R.!5e0!3m2!1ses!2smx!4v1689100104088!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__one"></iframe>
   </section>
+  
 @endsection

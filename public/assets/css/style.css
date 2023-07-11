@@ -123,13 +123,11 @@ CSS INDEX
 }
 .pre-loading {
 	position: relative;
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	background: transparent;
-	border: 10px solid var(--white);
 	border-top: transparent;
 	border-bottom: transparent;
-	border-radius: 50%;
 	animation: loading 1.2s linear infinite;
 }
 
@@ -398,7 +396,7 @@ header {
 .section_heading {
     text-align: left;
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 0;
     text-transform: capitalize;
     
 }
@@ -466,9 +464,9 @@ span.marking {
     gap: 20px;
 }
 .hero_container .hero_button .transparentButton.buttonH1 {
-    color: #C6C3AC;
+    color: #003E51;
     background: transparent;
-    border: 1px solid #C6C3AC;
+    border: 1px solid #003E51;
     border-radius: 12px;
 }
 /* hero condition  */
@@ -607,7 +605,7 @@ span.marking {
 }
 .abf_container .abf_content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: end;
     grid-gap: 100px;
 }
@@ -3515,7 +3513,6 @@ span.underline2 {
     border: none;
     height: 475px;
     width: 100%;
-    mix-blend-mode: luminosity;
 }
 
 .numeracion {
@@ -3535,8 +3532,7 @@ span.underline2 {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
     border-bottom: 1px solid #C0C0C0;
-
 }
