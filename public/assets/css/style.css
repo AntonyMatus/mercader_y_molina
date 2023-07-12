@@ -1723,11 +1723,13 @@ span.marking {
 }
 .blog_content .thumb {
     margin-bottom: 30px;
+    height: 200px;
+    width: 100%;
 }
 .blog_content .thumb img {
-    height: 220px;
+    height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .blog_content .content .button .buttonH1 {
     padding: 10px  20px;

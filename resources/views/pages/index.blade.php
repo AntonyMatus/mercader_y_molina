@@ -41,7 +41,7 @@
   <!--== hero area ends here ==-->
 
   <!--== about features area here ==-->
-  <section id="about" class="about_features ">
+  <section id="about" class="about_features margin">
     <div class="abf_wrapper">
       <div class="container">
         <div class="row">
@@ -101,7 +101,7 @@
   </section>
   <!--== about features area ends here ==-->
 
-  <section id="servicio" class="features2 sp_120">
+  <section id="servicio" class="features2 sp_120 margin">
     <div class="features_wrapper2">
       <div class="container">
         <div class="row">
@@ -201,7 +201,7 @@
     </div>
   </section>
 
-  <section id="faq" class=" sp_1202 margin pb-6rem">
+  <section id="faq" class=" sp_1202 margin pb-6rem margin">
     <div class="abf_wrapper">
         <div class="container">
             <div class="row">
@@ -305,7 +305,7 @@
     </div>
   </section>
 
-  <div class="customer2">
+  <div class="customer2 margin">
       <div class="customer_wrapper margin">
           <div class="container">
               <div class="row display-repons">
@@ -338,7 +338,7 @@
       </div>
   </div>
 
-  <section class="news-page">
+  <section class="news-page margin">
     <div class="container">
         <div class="row justify-content-center gap-respons">
             <!--news One Single Start-->
@@ -393,7 +393,7 @@
     </div>
   </section>
 
-  <section class="blog latest_blog2">
+  <section class="blog latest_blog2 margin">
     <div class="blog_wrapper">
       <div class="container">
         <div class="row">
@@ -446,7 +446,7 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="contact" class="contact margin">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
@@ -545,7 +545,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="margin">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.7096301586976!2d-88.29625652597132!3d18.54201936852107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba4f27b62fd71%3A0x9d2eba334378451d!2sCondominio%20Framboyanes%2C%2077086%20Chetumal%2C%20Q.R.!5e0!3m2!1ses!2smx!4v1689100104088!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__one"></iframe>
   </section>
   

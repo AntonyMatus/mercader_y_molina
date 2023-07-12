@@ -45,7 +45,7 @@
 						                                <input type="text" name="search" placeholder="Palabra clave">
 						                            </div>
 						                            <div class="from_button">
-						                                <button type="button" class="mainButton buttonH1"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+						                                <button type="submit" class="mainButton buttonH1"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
 						                            </div>
 					                            </div>
 					                        </form>

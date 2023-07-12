@@ -904,7 +904,7 @@ Extra large: ---------
         margin-bottom: 20px;
     }
     .blog_content .thumb img {
-        height: 200px;
+        height: 100%;
     }
     .blog_content .content .title a {
         font-size: 18px;
@@ -2552,7 +2552,7 @@ Medium Layout: ---------
     5.1-768) blog area here
     ***********************/
     .blog_items {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 62px;
     }
 
@@ -2699,6 +2699,11 @@ Medium Layout: ---------
 
     .header_container .header_button{
         margin-top: 30px;
+    }
+
+    .blog_content .thumb{
+        width: 100%;
+        height: 185px;
     }
 
 }
@@ -2849,7 +2854,23 @@ Small Layout: ---------
     .features_content2 .content h4{
         text-align: center;
     }
-    
+
+    .blog_content .thumb{
+        width: 100%;
+        height: 185px;
+    }
+    .margin {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero, .aHero, .pChoose, .inde_hero, .signUp, .contact_hero {
+        margin-top: 10px;
+    }
+
+    .aHero_container .section_header .section_heading{
+        text-align: center;
+    }
 }
 
 /*########################
