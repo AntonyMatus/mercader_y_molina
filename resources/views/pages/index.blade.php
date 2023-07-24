@@ -2,6 +2,10 @@
 
 @section('title', 'Home')
 
+@section('styles')
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+@endsection
+
 @section('content')
     <!--== hero area here ==-->
   <section class="hero">
@@ -24,6 +28,9 @@
                     <ul class="hero_button" data-aos="fade-up">
                       <li>
                         <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="clientButton buttonH1">Servicios</button>
+                      </li>
+                      <li>
+                        <button onclick="redirectRoute('{{ route('index') }}#firma')" type="button" class="clientButton2 buttonH1">La Firma</button>
                       </li>
                       <li>
                         <button onclick="redirectRoute('{{ route('index') }}#contact')" type="button" class="transparentButton buttonH1">Contacto</button>
@@ -82,7 +89,7 @@
                       <div class="c_accor_content">
                           <ul>
                             <li class="text_serv"><span class="numeracion">01</span> Corporativo</li>
-                            <li class="text_serv"><span class="numeracion">02</span> Litigio</li>
+                            <li class="text_serv"><span class="numeracion">02</span> Contratos Civiles y Mercantiles</li>
                             <li class="text_serv"><span class="numeracion">03</span> Inmobiliario</li>
                             <li class="text_serv"><span class="numeracion">04</span> Auditoría Legal</li>
                           </ul>
@@ -140,9 +147,9 @@
                       <img src="assets/images/icon/features5.png" alt="">
                     </div>
                     <div class="content">
-                      <h4 class="section_heading2">Representación en litigios</h4>
+                      <h4 class="section_heading2">Asesoría Inmobiliaria en el área legal</h4>
                       <p>
-                        Defender los intereses de los clientes en procedimientos judiciales y administrativos, ya sea en tribunales civiles, penales, laborales o administrativos.
+                        Asesoría legal especializada en aspectos inmobiliarios para brindar soluciones legales efectivas y proteger tus intereses.
                       </p>
                     </div>
                   </div>
@@ -166,8 +173,10 @@
                       <img src="assets/images/icon/features7.png" alt="">
                     </div>
                     <div class="content">
-                      <h4 class="section_heading2">Derecho laboral</h4>
-                      <p>Servicios relacionados con el derecho laboral, como redacción y revisión de contratos laborales, resolución de conflictos laborales, entre otros.</p>
+                      <h4 class="section_heading2">Contratos Civiles y Mercantiles</h4>
+                      <p>
+                        Elaboramos y revisamos contratos civiles y mercantiles para garantizar transacciones seguras y proteger tus derechos comerciales.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -177,8 +186,10 @@
                       <img src="assets/images/icon/features9.png" alt="">
                     </div>
                     <div class="content">
-                      <h4 class="section_heading2">Derecho de familia</h4>
-                      <p>Asistir en asuntos de derecho familiar y acuerdos prenupciales.</p>
+                      <h4 class="section_heading2">Propiedad Intelectual</h4>
+                      <p>
+                        Protegemos y defendemos tus derechos de propiedad intelectual, brindando asesoramiento legal.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -188,8 +199,10 @@
                       <img src="assets/images/icon/features8.png" alt="">
                     </div>
                     <div class="content">
-                      <h4 class="section_heading2">Planificación patrimonial y sucesiones</h4>
-                      <p>Ayudar a los clientes a planificar la distribución de sus activos y propiedades, redactar testamentos, establecer fideicomisos y gestionar asuntos relacionados con herencias y sucesiones.</p>
+                      <h4 class="section_heading2">Asesoría a extranjeros para adquisición de bienes en México</h4>
+                      <p>
+                        Asesoría legal para extranjeros que desean adquirir propiedades en México, garantizando un proceso seguro y sin complicaciones.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -331,18 +344,18 @@
                       </div>
                   </div>
                   <div class="col-sm-12 col-md-6 d-grid justify-content-center ">
-                    <img src="{{asset('assets/images/banner/mercader_molina.png')}}" alt="mercader & molina">
+                    <img width="100%" src="{{asset('assets/images/banner/Banner_mercader.svg')}}" alt="mercader & molina">
                   </div>
               </div>
           </div>
       </div>
   </div>
 
-  <section class="news-page margin">
+  <section id="firma" class="news-page margin">
     <div class="container">
         <div class="row justify-content-center gap-respons">
             <!--news One Single Start-->
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                 <div class="news-one__single">
                     <div class="news-one__img-box">
                         <div class="news-one__img">
@@ -358,7 +371,10 @@
                             </ul>
                             <h3 class="news-one__title">Lic. Mauricio Mercader Alonso</h3>
                             <p class="news-one-puesto">Director General & Socio</p>
-                            
+                            <ul class="viñetas">
+                              <li class="estudios">Licenciado en Derecho Universidad Anáhuac</li>
+                              <li class="estudios">Máster Derecho Internacional de los Negocios ESADE Business & Law School</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -381,7 +397,12 @@
                           </ul>
                           <h3 class="news-one__title">Mtra. Dalva Molina Verduchi</h3>
                           <p class="news-one-puesto">Director General & Socia</p>
-                          
+                          <ul class="viñetas">
+                            <li class="estudios">Licenciada en Derecho Universidad Anáhuac.</li>
+                            <li class="estudios">Especialidad en Amparo Universidad Panamericana.</li>
+                            <li class="estudios">Maestría en Derecho Empresarial Universidad Anáhuac.</li>
+                            <li class="estudios">Certificada TOLES Inglés Jurídico.</li>
+                          </ul>
                       </div>
                   </div>
               </div>
@@ -393,7 +414,7 @@
     </div>
   </section>
 
-  <section class="blog latest_blog2 margin">
+  {{-- <section class="blog latest_blog2 margin">
     <div class="blog_wrapper">
       <div class="container">
         <div class="row">
@@ -438,6 +459,135 @@
                   </div>
                 </div>
                 @endforeach
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> --}}
+
+  <section class="testimonials sp_120">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="testimonials_wrapper">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="testimonials_container">
+                    <!-- section header area here  -->
+                    <div class="section_header">
+                      <h2 class="title-testimonial aos-init aos-animate text-center" data-aos="fade-up">Clientes Satisfechos </h2>
+                    </div>
+                    <!-- testimonials items area here  -->
+                    <div class="testimonials_items">
+                      <div x-data="{open:false}" class="testimonials_item aos-init aos-animate" data-aos="fade-up">
+                        <div class="content">
+                          <ul class="star">
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                          </ul>
+                          <p id="show-description"  :class="`${open?'w-l-c':'w-l-c-4'} description `">
+                            Mauricio was exceptionally professional in every aspect and gave us confidence in his knowledge of the  procedure required for the sale. His expertise, his attention to detail and  his outstanding help by being readily available to answer questions and also providing delivery of documents as required, was impecable. Mauricio is also fluent in Spanish and English as he was schooled in other countries as well as Mexico!!!!
+                            Without question we would highly recommend Mauricio.  If you are in the market for a professional, who is well versed and a very friendly lawyer he would be pleased to help you.
+                          </p>
+                          <hr>
+                          <a id="ver_mas_info" @click="open=!open" x-text="`${open?'Ver menos':'Ver mas'}`" class="text-center text-dark d-grid justify-content-center"></a>
+                          <div class="meta">
+                            <div class="thumb">
+                              <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
+                            </div>
+                            <div class="info">
+                              <h5>Marilyn Marshall</h5>
+                              <p>Calgary, Alberta, Canadá.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div x-data="{open:false}" class="testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                        <div class="content">
+                          <ul class="star">
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                          </ul>
+                          <p id="show-description"  :class="`${open?'w-l-c':'w-l-c-4'} description `">
+                            Would like to thank you once again for your assistance in handling the paper work and process in the sale of our house in Mahahual. Your ability to speak English was a great asset.
+                          </p>
+                          <hr>
+                          <a id="ver_mas_info" @click="open=!open" x-text="`${open?'Ver menos':'Ver mas'}`" class="text-center text-dark d-grid justify-content-center"></a>
+                          <div class="meta">
+                            <div class="thumb">
+                              <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
+                            </div>
+                            <div class="info">
+                              <h5>Ana Tanasa</h5>
+                              <p>Warmest regards</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div x-data="{open:false}" class="testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                          <ul class="star">
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                          </ul>
+                          <p id="show-description"  :class="`${open?'w-l-c':'w-l-c-4'} description `">
+                             I am writing to express my utmost satisfaction and gratitude for the exceptional legal services you provided during my recent investment. Your dedication, expertise, and professionalism were truly outstanding, and I am incredibly pleased with the positive outcome that we achieved.
+                             Without hesitation, I would highly recommend your services to anyone in need of legal representation. 
+                             Thank you once again for your outstanding work, and please extend my gratitude to your entire team for their contributions.
+                          </p>
+                          <hr>
+                          <a id="ver_mas_info" @click="open=!open" x-text="`${open?'Ver menos':'Ver mas'}`" class="text-center text-dark d-grid justify-content-center"></a>
+                          
+                          <div class="meta">
+                            <div class="thumb">
+                              <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
+                            </div>
+                            <div class="info">
+                              <h5>Anunciata Flores</h5>
+                              <p>Cliente Particular</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <div class="content">
+                          <ul class="star">
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
+                          </ul>
+                          <p class="description">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam”
+                          </p>
+                          <hr>
+                          <div class="meta">
+                            <div class="thumb">
+                              <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
+                            </div>
+                            <div class="info">
+                              <h5>Juan Carlos Rincón</h5>
+                              <p>Cliente Particular</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -502,32 +652,65 @@
                     </div>
                     <!-- contact form  -->
                     <div class="contact_form">
-                      <form action="mail.php" method="POST">
+                      <form onsubmit="onSubmit(event)" id="form-contect">
+                        @csrf
                         <div class="cf_content">
                           <div class="cf_group">
                             <div class="cf_field aos-init aos-animate" data-aos="fade-up">
-                              <input type="text" name="your-name" placeholder="Nombre">
+                              <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Nombre" 
+                                required
+                              />
                             </div>
                             <div class="cf_field aos-init aos-animate" data-aos="fade-up">
-                              <input type="email" name="email" placeholder="Email">
+                              <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Email" 
+                                required
+                              />
                             </div>
                           </div>
                           <div class="cf_group">
                             <div class="cf_field aos-init aos-animate" data-aos="fade-up">
-                              <input type="number" name="number" placeholder="Telefono">
+                              <input 
+                                type="number" 
+                                name="phone" 
+                                placeholder="Telefono" 
+                                required
+                              />
                             </div>
                             <div class="cf_field aos-init aos-animate" data-aos="fade-up">
-                              <input type="text" name="company-name" placeholder="Empresa">
+                              <input 
+                                type="text" 
+                                name="company_name" placeholder="Empresa" 
+                                required
+                              />
                             </div>
                           </div>
                           <div class="cf_message">
                             <div class="cf_field aos-init aos-animate" data-aos="fade-up">
-                              <textarea name="message" id="message" placeholder="Mensaje" cols="30" rows="10"></textarea>
+                              <textarea 
+                                name="message" 
+                                id="message" 
+                                placeholder="Mensaje" 
+                                cols="30" 
+                                rows="10" 
+                                required
+                              ></textarea>
                             </div>
                           </div>
                           <div class="cf_button aos-init aos-animate" data-aos="fade-up">
-                            <button type="button" class="secondaryButton buttonH1">Enviar Mensaje</button>
+                            <button type="submit" class="secondaryButton buttonH1">Enviar Mensaje</button>
                           </div>
+                          <div class="d-none justify-content-center" id="loading">
+                            <div class="spinner-border" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                          </div>
+
                         </div>
                       </form>
                     </div>
@@ -546,7 +729,60 @@
   </section>
 
   <section class="margin">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.7096301586976!2d-88.29625652597132!3d18.54201936852107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5ba4f27b62fd71%3A0x9d2eba334378451d!2sCondominio%20Framboyanes%2C%2077086%20Chetumal%2C%20Q.R.!5e0!3m2!1ses!2smx!4v1689100104088!5m2!1ses!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__one"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3783.416295177366!2d-88.31535148510744!3d18.51008068741512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDMwJzM2LjMiTiA4OMKwMTgnNDcuNCJX!5e0!3m2!1ses-419!2smx!4v1689699060301!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="google-map__one"></iframe>
+
   </section>
   
+@endsection
+
+@section('scripts')
+  <script>
+      const onSubmit = async (event) => {
+            event.preventDefault()
+
+            showLoading()
+
+            try {
+
+                const form = document.getElementById('form-contact')
+                const data = new FormData(form)
+
+                const res = await fetch('/send_email_contact', {
+                    method: 'POST',
+                    body: data
+                })
+
+                const values = await res.json()
+
+                if (values.ok) {
+                    showToast(values.message)
+                    document.getElementById('form-contact').reset()
+                } else {
+                    showToast('Ocurrio un error, intentalo de nuevo', false)
+                }
+
+                hideLoading()
+
+            } catch(e) {
+                hideLoading()
+                showToast('Ocurrio un error, intentalo de nuevo', false)
+            }
+        }
+
+        const showLoading = () => {
+            let btnSubmit = document.getElementById('submit')
+            btnSubmit.classList.add('d-none')
+            let loading = document.getElementById('loading')
+            loading.classList.remove('d-none')
+            loading.classList.add('d-flex')
+        }
+
+        const hideLoading = () => {
+            let btnSubmit = document.getElementById('submit')
+            btnSubmit.classList.remove('d-none')
+            let loading = document.getElementById('loading')
+            loading.classList.remove('d-flex')
+            loading.classList.add('d-none')
+        }
+  </script>
 @endsection

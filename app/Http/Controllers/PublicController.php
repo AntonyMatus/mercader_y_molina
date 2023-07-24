@@ -92,13 +92,13 @@ class PublicController extends Controller
             'name' => ['required', 'string'],
             'email' => ['required', 'string', 'email'],
             'phone' => ['required', 'numeric'],
-            'country' => ['required', 'string'],
+            'company_name' => ['required', 'string'],
             'message' => ['required', 'string'],
         ]);
 
         try {
             
-            Mail::to('numanamx@gmail.com')->send(new ContactMail($request));
+            Mail::to('informacion@mercadermolina.com')->send(new ContactMail($request));
 
             return response()->json([
                 'ok' => true,

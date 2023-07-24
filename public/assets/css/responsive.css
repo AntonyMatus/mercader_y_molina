@@ -708,6 +708,12 @@ Extra large: ---------
     }
     /* common end */
     
+    .w-l-c-4{
+        -webkit-line-clamp: 4;
+    }
+    .w-l-c{
+        -webkit-line-clamp: initial;
+    }
     /* 
     1) home-one-1400-------------------]
     */
@@ -2818,7 +2824,7 @@ Small Layout: ---------
     }
 
     .hero_wrapper{
-        padding: 40px 0px 0px;
+        padding: 80px 0px 0px;
     }
 
     .separador{
@@ -2871,6 +2877,23 @@ Small Layout: ---------
     .aHero_container .section_header .section_heading{
         text-align: center;
     }
+
+    .testimonials_item .content .description{
+        display: -webkit-box;
+        
+    }
+
+    .w-l-c-4{
+        -webkit-line-clamp: 4;
+    }
+    .w-l-c{
+        -webkit-line-clamp: initial;
+    }
+
+    .news-one__content{
+        height: auto;
+    }
+    
 }
 
 /*########################

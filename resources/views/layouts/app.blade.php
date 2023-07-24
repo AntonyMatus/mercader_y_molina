@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--== responsive css ==-->
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     @yield('styles')
 </head>
 <body>
@@ -48,8 +51,8 @@
             <div class="header_wrapper">
                 <!-- logo container  -->
                 <div class="logo_container">
-                <a href="{{ route('home') }}">
-                    <img src="assets/images/logo/mercader_logo_nav.png" alt="Mercader">
+                <a href="{{ route('index') }}">
+                    <img src="{{ asset('assets/images/logo/navbar.svg') }}" alt="Mercader">
                 </a>
                 </div>
                 <!-- header container  -->
@@ -66,7 +69,7 @@
                     <li><a href="{{route('index')}}#about">Introducción</a></li>
                     <li><a href="{{route('index')}}#services">Servicios</a></li>
                     <li><a href="{{route('index')}}#faqs">Preguntas Frecuentas</a></li>
-                    <li><a href=" {{ route('blog')}} ">Blog</a></li>
+                    {{-- <li><a href=" {{ route('blog')}} ">Blog</a></li> --}}
                     <li><a href="{{route('index')}}#contact">Contacto</a>
                     </li>
                     </ul>
@@ -103,7 +106,7 @@
                 <div class="footer_items">
                     <div class="footer_item w-50">
                     <div class="footer_widget d-grid justify-items-end">
-                        <img src="assets/images/logo/logo_footer.png" alt="Logo" width="240px">
+                        <img src="{{asset('assets/images/logo/banner_footer.svg')}}" alt="Logo" width="240px">
                         </div>
                     </div>
                     <div class="footer_item">
@@ -137,7 +140,9 @@
                     </ul>
                 </div>
                 <div class="copyright_text">
-                    <p><a href="{{ route('login')}}"><i class="fa fa-user" aria-hidden="true"></i></a> © Copyright 2023, Desarrollado por  <a href="https://www.buho-solutions.com/">Búho Solutions</a> </p>
+                    <p>
+                        {{-- <a href="{{ route('login')}}"><i class="fa fa-user" aria-hidden="true"></i></a>  --}}
+                        © Copyright 2023, Desarrollado por  <a href="https://www.buho-solutions.com/">Búho Solutions</a> </p>
                 </div>
                 </div>
             </div>

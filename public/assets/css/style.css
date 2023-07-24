@@ -162,6 +162,7 @@ CSS INDEX
     border: 1px solid #003E51;
     border-radius: 12px;
     font-family: 'Inter';
+    font-size: 18px;
 }
 .secondaryButton.buttonH1 {
     color: var(--blackH1);
@@ -179,13 +180,32 @@ CSS INDEX
     color: var(--blackH1);
     background: transparent;
     border: 1px solid var(--blackH1);
+    font-family: 'Albert Sans';
+    font-size: 20px;
 }
 .clientButton.buttonH1 {
     color: black;
     background: #C6C3AC;
     border: 1px solid #C6C3AC;
     border-radius: 12px;
+    font-family: 'Albert Sans';
+    font-size: 20px;
 }
+
+.clientButton2.buttonH1 {
+    color: #C6C3AC;
+    background: #003E51;
+    border: 1px solid #003E51;
+    border-radius: 12px;
+    font-family: 'Albert Sans';
+    font-size: 20px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+
 .mainButton.buttonH1:hover, 
 .secondaryButton.buttonH1:hover, 
 .transparentButton.buttonH1:hover {
@@ -761,18 +781,18 @@ span.marking {
     margin-bottom: 16px;
 }
 .testimonials_item .content .star li a {
-    color: #FFC947;
+    color: #003E51;
 }
 .testimonials_item .content .description {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
     font-family: 'Urbanist', sans-serif;
+    color: #12141D;
 }
 .testimonials_item .content hr {
     margin: 30px 0px;
@@ -783,8 +803,8 @@ span.marking {
     gap: 20px;
 }
 .testimonials_item .content .meta .thumb img {
-    width: 60px;
-    height: 60px;
+    width: 29px;
+    height: 29px;
     object-fit: cover;
 }
 .testimonials_item .content .meta .info h5 {
@@ -796,6 +816,21 @@ span.marking {
     font-size: 16px;
     line-height: 26px;
     font-family: 'Urbanist', sans-serif;
+}
+
+.meta .thumb {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: #003E51;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.meta .thumb img {
+    width: 40px;
+    height: 40px;
 }
 /*---------------------------
 1.9) testimonials area ends here
@@ -2186,7 +2221,7 @@ span.marking {
     margin-bottom: 2rem;
 }
 .c_accor_content .accordion-button {
-    padding: 20px;
+    padding: 4px 20px 20px 0px;
     font-size: 20px;
     line-height: 34px;
     font-weight: 600;
@@ -2223,7 +2258,7 @@ span.marking {
     content: "\f107";
 }
 .c_accor_content .accordion-body {
-    padding: 4px 20px 20px 20px;
+    padding: 4px 20px 20px 0px;
 }
 .c_accor_content .accordion-body p {
     color: var(--blackH1);
@@ -3355,6 +3390,7 @@ span.underline2 {
     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
     padding: 21px 40px 12px;
     z-index: 2;
+    height: 320px;
 }
 
 .news-one__meta {
@@ -3408,7 +3444,7 @@ span.underline2 {
 
 .news-one__title {
     font-family: 'Urbanist';
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 54px;
     letter-spacing: 0em;
@@ -3519,7 +3555,7 @@ span.underline2 {
 
 .numeracion {
     font-family: 'Albert Sans';
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
@@ -3529,7 +3565,7 @@ span.underline2 {
 
 .text_serv {
     font-family: 'Albert Sans';
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
@@ -3537,4 +3573,29 @@ span.underline2 {
     padding-bottom: 3rem;
     padding-top: 3rem;
     border-bottom: 1px solid #C0C0C0;
+}
+
+.estudios{
+    font-family: 'Inter';
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+
+}
+
+.viñetas {
+    list-style: disc;
+}
+
+.title-testimonial {
+    font-family: 'Urbanist';
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0px;
+    text-align: center;
+
 }

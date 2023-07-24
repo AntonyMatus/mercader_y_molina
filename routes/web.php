@@ -20,16 +20,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PublicController::class, 'index'])->name('index');
-Route::get('/blog', [PublicController::class, 'blog'])->name('blog');
-Route::get('/single_blog', [PublicController::class, 'single_blog'])->name('single_blog');
-Route::get('/contact', [PublicController::class, 'contact'])->name('contact');
+Route::post('/send_email_contact', [PublicController::class, 'sendContactMail']);
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::resources([
-    'categories' => CategoryController::class,
-    'Blogs' => BlogController::class,
-    'Authors' => AuthorController::class,
-    'Users' => AdminUserController::class
-]);
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::resources([
+//     'categories' => CategoryController::class,
+//     'Blogs' => BlogController::class,
+//     'Authors' => AuthorController::class,
+//     'Users' => AdminUserController::class
+// ]);
