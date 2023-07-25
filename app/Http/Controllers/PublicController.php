@@ -98,7 +98,7 @@ class PublicController extends Controller
 
         try {
             
-            Mail::to('informacion@mercadermolina.com')->send(new ContactMail($request));
+            Mail::to('contacto@mercadermolina.com')->send(new ContactMail($request));
 
             return response()->json([
                 'ok' => true,

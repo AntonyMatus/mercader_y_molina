@@ -481,8 +481,8 @@
                       <h2 class="title-testimonial aos-init aos-animate text-center" data-aos="fade-up">Clientes Satisfechos </h2>
                     </div>
                     <!-- testimonials items area here  -->
-                    <div class="testimonials_items">
-                      <div x-data="{open:false}" class="testimonials_item aos-init aos-animate" data-aos="fade-up">
+                    <div class="row gap-2rem justify-content-center">
+                      <div x-data="{open:false}" class="col-md-6 testimonials_item aos-init aos-animate" data-aos="fade-up">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -508,7 +508,7 @@
                           </div>
                         </div>
                       </div>
-                      <div x-data="{open:false}" class="testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div x-data="{open:false}" class="col-md-6 testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -533,7 +533,7 @@
                           </div>
                         </div>
                       </div>
-                      <div x-data="{open:false}" class="testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <div x-data="{open:false}" class="col-6 testimonials_item aos-init aos-animate mt-3rem" data-aos="fade-up" data-aos-delay="200">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -556,30 +556,6 @@
                             </div>
                             <div class="info">
                               <h5>Anunciata Flores</h5>
-                              <p>Cliente Particular</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                        <div class="content">
-                          <ul class="star">
-                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
-                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
-                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
-                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
-                            <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
-                          </ul>
-                          <p class="description">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam”
-                          </p>
-                          <hr>
-                          <div class="meta">
-                            <div class="thumb">
-                              <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
-                            </div>
-                            <div class="info">
-                              <h5>Juan Carlos Rincón</h5>
                               <p>Cliente Particular</p>
                             </div>
                           </div>
@@ -652,7 +628,7 @@
                     </div>
                     <!-- contact form  -->
                     <div class="contact_form">
-                      <form onsubmit="onSubmit(event)" id="form-contect">
+                      <form onsubmit="onSubmit(event)" id="form-contact">
                         @csrf
                         <div class="cf_content">
                           <div class="cf_group">
@@ -703,7 +679,7 @@
                             </div>
                           </div>
                           <div class="cf_button aos-init aos-animate" data-aos="fade-up">
-                            <button type="submit" class="secondaryButton buttonH1">Enviar Mensaje</button>
+                            <button id="submit" type="submit" class="secondaryButton buttonH1">Enviar Mensaje</button>
                           </div>
                           <div class="d-none justify-content-center" id="loading">
                             <div class="spinner-border" role="status">
@@ -736,6 +712,7 @@
 @endsection
 
 @section('scripts')
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
       const onSubmit = async (event) => {
             event.preventDefault()
@@ -747,23 +724,19 @@
                 const form = document.getElementById('form-contact')
                 const data = new FormData(form)
 
-                const res = await fetch('/send_email_contact', {
-                    method: 'POST',
-                    body: data
-                })
+                const res = await axios.post('/send_email_contact', data)
 
-                const values = await res.json()
-
-                if (values.ok) {
-                    showToast(values.message)
-                    document.getElementById('form-contact').reset()
+                if(res) {
+                  showToast('Mesaje enviado', true)
+                  document.getElementById('form-contact').reset()
                 } else {
-                    showToast('Ocurrio un error, intentalo de nuevo', false)
+                  showToast('Ocurrio un error, intentalo de nuevo', false)
                 }
-
+                
                 hideLoading()
 
             } catch(e) {
+                console.log(e)
                 hideLoading()
                 showToast('Ocurrio un error, intentalo de nuevo', false)
             }
