@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    
     <title>Mercader & Molina | @yield('title')</title>
+    <meta name="description" content="¡Bienvenido a Mercader & Molina!, Somos un equipo altamente calificado y comprometido que se especializa en diversas áreas legales. Con una amplia experiencia en los ámbitos corporativo, litigio, inmobiliario y auditoría legal, brindamos soluciones legales integrales y eficientes para satisfacer las necesidades de nuestros clientes. Nuestro enfoque personalizado y orientado al cliente nos permite comprender a fondo los desafíos legales que enfrentan las empresas y los particulares">
     <!--== Favicon ==-->
     <link rel="shortcut icon" href="{{asset('assets/images/icon/favicon.png')}}">
     <!--== Bootstrap v5.2.2 min css ==-->
@@ -63,6 +65,10 @@
                     <span><i class="fa-solid fa-xmark"></i></span>
                     </div>
                 </div>
+
+                <div class="img-logo">
+                    <img src="{{ asset('assets/images/banner/Banner_mercader.svg') }}" alt="logo-mercader">
+                </div>
                 <!-- nav content -->
                 <div class="header_nav">
                     <ul class="navigation">
@@ -119,7 +125,7 @@
                                     C.P. 77034
                                 </li>
                                 <li class="fw_list mb-1"><i class="fa fa-envelope text-client" aria-hidden="true"></i> 
-                                    informacion@mercadermolina.com</li>
+                                    contacto@mercadermolina.com</li>
                                 <li class="fw_list"><i class="fa fa-phone text-client" aria-hidden="true"></i> 
                                     999 242 9375 |  999 335 3513 
                                 </li>
@@ -130,10 +136,7 @@
                 </div>
                 <div class="copyright_container">
                 <div class="copyright_link">
-                    <ul class="social">
-                        <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+                   
                     <ul class="copyright_menu">
                         <li><a href="#!">Aviso de Privacidad.</a></li>
                         <li><a href="#!">Términos y condiciones</a></li>

@@ -128,7 +128,7 @@ CSS INDEX
 	background: transparent;
 	border-top: transparent;
 	border-bottom: transparent;
-	animation: loading 1.2s linear infinite;
+	
 }
 
 @keyframes loading {
@@ -2469,6 +2469,7 @@ h1.hero_heading2,
     font-size: 20px;
     line-height: 32px;
     color: #1E1E1E;
+    text-align: end;
 }
 span.underline2 {
     text-decoration: none;
@@ -2608,9 +2609,11 @@ span.underline2 {
 .features_container2 .features_item2 {
     padding: 40px 30px;
     background: var(--white);
+    text-align: center;
 }
 .features_content2 .thumb {
     margin-bottom: 14px;
+    text-align: center;
 }
 .features_content2 .thumb img {
     max-width: 32px;
@@ -2624,6 +2627,14 @@ span.underline2 {
 .features_content2 .content p {
     font-size: 16px;
     line-height: 24px;
+}
+
+.testimonials_item{
+    margin-bottom: 4rem;
+}
+
+.img-customer{
+    width: 100%;
 }
 /*---------------------------
 11.4) features two area ends here
@@ -3603,4 +3614,8 @@ span.underline2 {
 
 .mt-3rem{
     margin-top: 3rem;
+}
+
+.img-logo{
+    display: none;
 }

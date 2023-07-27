@@ -25,15 +25,12 @@
                     <p class="hero_des" data-aos="fade-up">
                       Bienvenido a Mercader & Molina Abogados
                     </p>
-                    <ul class="hero_button" data-aos="fade-up">
+                    <ul class="hero_button" >
                       <li>
                         <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="clientButton buttonH1">Servicios</button>
                       </li>
                       <li>
                         <button onclick="redirectRoute('{{ route('index') }}#firma')" type="button" class="clientButton2 buttonH1">La Firma</button>
-                      </li>
-                      <li>
-                        <button onclick="redirectRoute('{{ route('index') }}#contact')" type="button" class="transparentButton buttonH1">Contacto</button>
                       </li>
                     </ul>
                   </div>
@@ -78,7 +75,7 @@
                       </div>
                       <!-- button  -->
                       <div class="abf_button" data-aos="fade-up">
-                        <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="mainButton buttonH1">Ver servicios</button>
+                        <button onclick="redirectRoute('{{ route('index') }}#services')" type="button" class="mainButton buttonH1">Ver servicios</button>
                       </div>
                     </div>
                     <div class="col-md-1 d-grid justify-content-center">
@@ -108,7 +105,7 @@
   </section>
   <!--== about features area ends here ==-->
 
-  <section id="servicio" class="features2 sp_120 margin">
+  <section id="services" class="features2 sp_120 margin">
     <div class="features_wrapper2">
       <div class="container">
         <div class="row">
@@ -122,7 +119,7 @@
               <div class="section_header2">
                 <h2 class="section_heading2 aos-init aos-animate urbanist" data-aos="fade-up">
                   Brindando servicios <br> <span data-aos="slide-left" data-aos-delay="100" class="underline2 aos-init aos-animate">legales</span> de confianza</h2>
-                <p class="desc aos-init aos-animate text-end" data-aos="fade-up">
+                <p class="desc aos-init aos-animate " data-aos="fade-up">
                   Asesoramiento legal especializado
                 </p>
               </div>
@@ -136,7 +133,7 @@
                     <div class="content">
                       <h4 class="section_heading2">Asesoramiento legal</h4>
                       <p>
-                        Orientación jurídica experta en áreas legales, desde derecho civil y laboral hasta derecho penal y fiscal.
+                        Orientación jurídica experta en áreas legales, desde derecho civil y laboral hasta derecho fiscal.
                       </p>
                     </div>
                   </div>
@@ -214,7 +211,7 @@
     </div>
   </section>
 
-  <section id="faq" class=" sp_1202 margin pb-6rem margin">
+  <section id="faqs" class=" sp_1202 margin pb-6rem margin">
     <div class="abf_wrapper">
         <div class="container">
             <div class="row">
@@ -344,7 +341,7 @@
                       </div>
                   </div>
                   <div class="col-sm-12 col-md-6 d-grid justify-content-center ">
-                    <img width="100%" src="{{asset('assets/images/banner/Banner_mercader.svg')}}" alt="mercader & molina">
+                    <img class="img-customer" src="{{asset('assets/images/banner/Banner_mercader.svg')}}" alt="mercader & molina">
                   </div>
               </div>
           </div>
@@ -533,7 +530,7 @@
                           </div>
                         </div>
                       </div>
-                      <div x-data="{open:false}" class="col-6 testimonials_item aos-init aos-animate mt-3rem" data-aos="fade-up" data-aos-delay="200">
+                      <div x-data="{open:false}" class="col-md-6 testimonials_item aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -590,41 +587,7 @@
                         </p>
                       </div>
                       <!-- social  -->
-                      <ul class="social">
-                        <li class="social_list aos-init aos-animate" data-aos="fade-up">
-                          <div class="social_content">
-                            <div class="thumb">
-                              <span><i class="fa-brands fa-facebook-f"></i></span>
-                            </div>
-                            <div class="content">
-                              <h4><a href="#!">facebook</a></h4>
-                              <p>Mercader & Molina</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="social_list aos-init aos-animate" data-aos="fade-up">
-                          <div class="social_content">
-                            <div class="thumb">
-                              <span><i class="fa-brands fa-instagram"></i></span>
-                            </div>
-                            <div class="content">
-                              <h4><a href="#!">Instagram</a></h4>
-                              <p>Mercader & Molina</p>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="social_list aos-init aos-animate" data-aos="fade-up">
-                          <div class="social_content">
-                            <div class="thumb">
-                              <span><i class="fa-brands fa-twitter"></i></span>
-                            </div>
-                            <div class="content">
-                              <h4><a href="#!">Twitter</a></h4>
-                              <p>Mercader & Molina</p>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
+                      
                     </div>
                     <!-- contact form  -->
                     <div class="contact_form">

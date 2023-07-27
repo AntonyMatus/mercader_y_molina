@@ -1885,7 +1885,14 @@ large layout:  ---------
         -moz-transition: all .6s ease;
         -ms-transition: all .6s ease;
         -o-transition: all .6s ease;
-        justify-content: center;
+        justify-content: start;
+
+    }
+
+    .img-logo{
+        display: inline;
+        width: 250px;
+        gap: 2rem;
     }
 
     .header_container.show{
@@ -2324,6 +2331,10 @@ large layout:  ---------
         margin-top: 80px;
     }
 
+    .img-customer{
+        width: 250px;
+    }
+
 }
 
 /*##############################
@@ -2393,7 +2404,20 @@ Medium Layout: ---------
     .testimonials_item .content .description {
         font-size: 16px;
         line-height: 26px;
-        display: inherit;
+        
+    }
+
+    .news-one__title{
+        line-height: 40px;
+    }
+
+
+    .estudios{
+        margin-bottom: 1rem;
+    }
+
+    .news-one__content{
+        height: 450px;
     }
     .testimonials_item .content .meta {
         gap: 14px;
@@ -2567,8 +2591,13 @@ Medium Layout: ---------
     }
 
     .header_container{
-        justify-content: center;
+        justify-content: start;
         background: #003E51;
+        gap: 4rem;
+    }
+
+    .features_container2 .features_item2{
+        text-align: left;
     }
 
     /*
@@ -2712,6 +2741,41 @@ Medium Layout: ---------
         height: 185px;
     }
 
+    .w-l-c-4{
+        -webkit-line-clamp: 4;
+    }
+    .w-l-c{
+        -webkit-line-clamp: initial;
+    }
+
+    .img-logo{
+        display: inline;
+        width: 150px;
+    }
+
+    .text_serv{
+        display: flex;
+    }
+
+    .footer_item{
+        width: 50%;
+    }
+
+    .footer_widget{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .footer_widget .fw_title{
+        text-align: center;
+    }
+
+    .img-customer{
+        width: 250px;
+    }
 }
 
 /*##############################
@@ -2808,8 +2872,9 @@ Small Layout: ---------
     }
 
     .header_container {
-        justify-content: center;
-        background: #003E51;;
+        justify-content: start;
+        background: #003E51;
+        gap: 2rem;
     }
 
     .closing_container{
@@ -2820,13 +2885,20 @@ Small Layout: ---------
     }
 
     .hero_container .hero_header{
-        font-size: 33px;
+        font-size: 30px;
+        order: -1;
+        line-height: 50px;
     }
 
     .hero_wrapper{
-        padding: 80px 0px 0px;
+        height: 100vh;
+        display: grid;
+        align-items: center;
     }
 
+    .hero_container .hero_button{
+        height: 68px;
+    }
     .separador{
         width: 100vh;
         height: 5px;
@@ -2858,9 +2930,20 @@ Small Layout: ---------
     }
 
     .features_content2 .content h4{
-        text-align: center;
+        text-align: left;
     }
 
+    .features_content2 .content p{
+        text-align: left;
+    }
+
+    #ver_mas_info{
+        margin-bottom: 20px;
+    }
+
+    .gap-2rem{
+        grid-gap: 2rem;
+    }
     .blog_content .thumb{
         width: 100%;
         height: 185px;
@@ -2891,7 +2974,46 @@ Small Layout: ---------
     }
 
     .news-one__content{
-        height: auto;
+        height: 400px;
+    }
+    .hero_sub-title{
+        font-size: 19px;
+    }
+
+    .text_serv{
+        display: flex;
+    }
+
+    .img-logo{
+        display: initial;
+        width: 150px;
+    }
+    .hero_container{
+        display: grid;
+        gap: 2rem;
+    }
+    
+    .hero_container .hero_des{
+        display: none;
+    }
+
+    .section_header2 .desc{
+        text-align: left;
+    }
+
+    .news-one__title{
+        line-height: 35px;
+    }
+    .testimonials_item{
+        margin-bottom: 0rem;
+    }
+
+    .subtitle2{
+        font-size: 38px;
+    }
+
+    .img-customer{
+        width: 200px;
     }
     
 }
