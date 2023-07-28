@@ -19,10 +19,10 @@
                 <div class="col-lg-9">
                   <div class="hero_container">
 
-                    <h4 class="hero_sub-title">Tu Jurídico de confianza</h4>
-                    <h1 class="hero_header" data-aos="fade-up">
+                    <h4 class="hero_sub-title" data-aos="fade-right">Tu Jurídico de confianza</h4>
+                    <h1 class="hero_header" data-aos="fade-right">
                       Comprometidos con la Excelencia y Dedicados a brindar asesoría jurídica integral.</h1>
-                    <p class="hero_des" data-aos="fade-up">
+                    <p class="hero_des" data-aos="fade-right">
                       Bienvenido a Mercader & Molina Abogados
                     </p>
                     <ul class="hero_button" >
@@ -63,7 +63,7 @@
                           <p class="w10"></p>
                           <span>Quiénes somos</span>
                         </div>
-                        <h2 class="section_heading" data-aos="fade-up">
+                        <h2 class="section_heading" data-aos="fade-right">
                           Somos un equipo de abogados especializados
                         </h2>
                       </div>
@@ -114,18 +114,18 @@
               <!-- section header area here  -->
               <div class="d-flex2 mb-3">
                 <p class="w10"></p>
-                <span>Nuestros Servicios</span>
+                <span data-aos="fade-right">Nuestros Servicios</span>
               </div>
               <div class="section_header2">
-                <h2 class="section_heading2 aos-init aos-animate urbanist" data-aos="fade-up">
-                  Brindando servicios <br> <span data-aos="slide-left" data-aos-delay="100" class="underline2 aos-init aos-animate">legales</span> de confianza</h2>
-                <p class="desc aos-init aos-animate " data-aos="fade-up">
+                <h2 class="section_heading2  urbanist" data-aos="fade-right">
+                  Brindando servicios <br> <span  class="underline2 a">legales</span> de confianza</h2>
+                <p class="desc" data-aos="fade-right">
                   Asesoramiento legal especializado
                 </p>
               </div>
               <!-- feature items area here  -->
               <div class="features_items2">
-                <div class="features_item2 aos-init aos-animate" data-aos="fade-up">
+                <div class="features_item2" data-aos="fade-down">
                   <div class="features_content2">
                     <div class="thumb">
                       <img src="assets/images/icon/features4.png" alt="">
@@ -138,7 +138,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="features_item2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="features_item2" data-aos="fade-down" data-aos-delay="100">
                   <div class="features_content2">
                     <div class="thumb">
                       <img src="assets/images/icon/features5.png" alt="">
@@ -151,7 +151,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="features_item2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                <div class="features_item2" data-aos="fade-down" data-aos-delay="200">
                   <div class="features_content2">
                     <div class="thumb">
                       <img src="assets/images/icon/features6.png" alt="">
@@ -164,7 +164,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="features_item2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div class="features_item2" data-aos="fade-down" data-aos-delay="300">
                   <div class="features_content2">
                     <div class="thumb">
                       <img src="assets/images/icon/features7.png" alt="">
@@ -177,7 +177,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="features_item2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                <div class="features_item2" data-aos="fade-down" data-aos-delay="400">
                   <div class="features_content2">
                     <div class="thumb">
                       <img src="assets/images/icon/features9.png" alt="">
@@ -190,7 +190,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="features_item2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                <div class="features_item2" data-aos="fade-down" data-aos-delay="500">
                   <div class="features_content2">
                     <div class="thumb">
                       <img src="assets/images/icon/features8.png" alt="">
@@ -475,11 +475,11 @@
                   <div class="testimonials_container">
                     <!-- section header area here  -->
                     <div class="section_header">
-                      <h2 class="title-testimonial aos-init aos-animate text-center" data-aos="fade-up">Clientes Satisfechos </h2>
+                      <h2 class="title-testimonial  text-center" data-aos="fade-right">Clientes Satisfechos </h2>
                     </div>
                     <!-- testimonials items area here  -->
                     <div class="row gap-2rem justify-content-center">
-                      <div x-data="{open:false}" class="col-md-6 testimonials_item aos-init aos-animate" data-aos="fade-up">
+                      <div x-data="{open:false}" class="col-md-6 testimonials_item" data-aos="fade-right">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -505,7 +505,7 @@
                           </div>
                         </div>
                       </div>
-                      <div x-data="{open:false}" class="col-md-6 testimonials_item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                      <div x-data="{open:false}" class="col-md-6 testimonials_item" data-aos="fade-right" data-aos-delay="100">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -524,13 +524,13 @@
                               <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
                             </div>
                             <div class="info">
-                              <h5>Ana Tanasa</h5>
+                              <h5>Bruce Marshall</h5>
                               <p>Warmest regards</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div x-data="{open:false}" class="col-md-6 testimonials_item aos-init aos-animate " data-aos="fade-up" data-aos-delay="200">
+                      <div x-data="{open:false}" class="col-md-6 testimonials_item " data-aos="fade-right" data-aos-delay="200">
                         <div class="content">
                           <ul class="star">
                             <li><a href="#!"><i class="fa-solid fa-star"></i></a></li>
@@ -552,7 +552,7 @@
                               <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon-testimonio">
                             </div>
                             <div class="info">
-                              <h5>Anunciata Flores</h5>
+                              <h5>Ana Tenasa</h5>
                               <p>Cliente Particular</p>
                             </div>
                           </div>
