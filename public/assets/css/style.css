@@ -279,8 +279,17 @@ header {
 .header_container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+}
+
+.display-none{
+    display: none !important;
+}
+
+.header_button{
+    display: flex;
+    justify-content: right;
 }
 /* closing bar  */
 .closing_container {

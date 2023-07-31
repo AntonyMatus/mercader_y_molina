@@ -21,18 +21,12 @@
 
                     <h4 class="hero_sub-title" data-aos="fade-right">Tu Jurídico de confianza</h4>
                     <h1 class="hero_header" data-aos="fade-right">
-                      Comprometidos con la Excelencia y Dedicados a brindar asesoría jurídica integral.</h1>
+                      Comprometidos con la excelencia y dedicados a brindar asesoría jurídica integral
+                    </h1>
                     <p class="hero_des" data-aos="fade-right">
-                      Bienvenido a Mercader & Molina Abogados
+                      Bienvenido a Mercader & Molina Abogados, S.C.
                     </p>
-                    <ul class="hero_button" >
-                      <li>
-                        <button onclick="redirectRoute('{{ route('index') }}#servicio')" type="button" class="clientButton buttonH1">Servicios</button>
-                      </li>
-                      <li>
-                        <button onclick="redirectRoute('{{ route('index') }}#firma')" type="button" class="clientButton2 buttonH1">La Firma</button>
-                      </li>
-                    </ul>
+                    
                   </div>
                 </div>
               </div>

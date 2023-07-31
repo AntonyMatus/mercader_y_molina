@@ -1851,6 +1851,7 @@ large layout:  ---------
         height: 80px;
         display: flex;
         align-items: center;
+        width: 95%;
     }
     .sticky {
         height: 70px;
@@ -2335,6 +2336,14 @@ large layout:  ---------
         width: 250px;
     }
 
+    .header_button{
+        display: none;
+    }
+
+    .display-none{
+        display: initial !important;
+    }
+
 }
 
 /*##############################
@@ -2776,6 +2785,14 @@ Medium Layout: ---------
     .img-customer{
         width: 250px;
     }
+
+    .header_button{
+        display: none;
+    }
+
+    .display-none{
+        display: initial !important;
+    }
 }
 
 /*##############################
@@ -2886,7 +2903,6 @@ Small Layout: ---------
 
     .hero_container .hero_header{
         font-size: 30px;
-        order: -1;
         line-height: 50px;
     }
 
@@ -2954,7 +2970,7 @@ Small Layout: ---------
     }
 
     .hero, .aHero, .pChoose, .inde_hero, .signUp, .contact_hero {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .aHero_container .section_header .section_heading{
@@ -2990,11 +3006,11 @@ Small Layout: ---------
     }
     .hero_container{
         display: grid;
-        gap: 2rem;
+        gap: 1rem;
     }
     
     .hero_container .hero_des{
-        display: none;
+        display: initial;
     }
 
     .section_header2 .desc{
@@ -3015,7 +3031,18 @@ Small Layout: ---------
     .img-customer{
         width: 200px;
     }
+
+    .hero_container .hero_des{
+        margin: 24px 25px;
+    }
     
+    .header_button{
+        display: none;
+    }
+
+    .display-none{
+        display: initial !important;
+    }
 }
 
 /*########################

@@ -53,41 +53,51 @@
             <div class="col-12">
             <div class="header_wrapper">
                 <!-- logo container  -->
-                <div class="logo_container">
-                <a href="{{ route('index') }}">
-                    <img src="{{ asset('assets/images/logo/navbar.svg') }}" alt="Mercader">
-                </a>
-                </div>
-                <!-- header container  -->
-                <div class="header_container">
-                <!-- closing bar  -->
-                <div class="closing_container">
-                    <div class="content">
-                    <span><i class="fa-solid fa-xmark"></i></span>
+                <div class="col-md-3">
+                    <div class="logo_container">
+                    <a href="{{ route('index') }}">
+                        <img src="{{ asset('assets/images/logo/navbar.svg') }}" alt="Mercader">
+                    </a>
                     </div>
                 </div>
-
-                <div class="img-logo">
-                    <img src="{{ asset('assets/images/banner/Banner_mercader.svg') }}" alt="logo-mercader">
+                <!-- header container  -->
+                <div class="col-md-6">
+                    <div class="header_container">
+                        <!-- closing bar  -->
+                        <div class="closing_container">
+                            <div class="content">
+                            <span><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                        </div>
+    
+                        <div class="img-logo">
+                            <img src="{{ asset('assets/images/banner/Banner_mercader.svg') }}" alt="logo-mercader">
+                        </div>
+                        <!-- nav content -->
+                        <div class="header_nav">
+                            <ul class="navigation">
+                            <li><a href="{{route('index')}}#about">Introducción</a></li>
+                            <li><a href="{{route('index')}}#services">Servicios</a></li>
+                            <li><a href=" {{ route('index')}}#firma">La Firma</a></li>
+                            <li><a href="{{route('index')}}#faqs">Preguntas Frecuentas</a></li>
+                            
+                            </li>
+                            </ul>
+                        </div>
+                        <!-- button content -->
+                        <ul class="header_button display-none">
+                            <li>
+                            <button onclick="redirectRoute('{{route('index')}}#contact')" type="button" class="clientButton buttonH1">Contacto</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- nav content -->
-                <div class="header_nav">
-                    <ul class="navigation">
-                    <li><a href="{{route('index')}}#about">Introducción</a></li>
-                    <li><a href="{{route('index')}}#services">Servicios</a></li>
-                    <li><a href="{{route('index')}}#faqs">Preguntas Frecuentas</a></li>
-                    {{-- <li><a href=" {{ route('blog')}} ">Blog</a></li> --}}
-                    <li><a href="{{route('index')}}#contact">Contacto</a>
-                    </li>
+                <div class="col-md-3">
+                    <ul class="header_button">
+                        <li>
+                        <button onclick="redirectRoute('{{route('index')}}#contact')" type="button" class="clientButton buttonH1">Contacto</button>
+                        </li>
                     </ul>
-                </div>
-                <!-- button content -->
-                <ul class="header_button">
-                    <li>
-                    <button onclick="redirectRoute('{{route('index')}}#contact')" type="button" class="clientButton buttonH1">Contacto</button>
-                    </li>
-                    
-                </ul>
                 </div>
                 <!-- Mobile menu bar container  -->
                 <div class="bar_container">
