@@ -671,7 +671,7 @@ span.marking {
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: justify;
     color: #1E1E1E;
 
 }
@@ -803,6 +803,7 @@ span.marking {
     line-height: 32px;
     font-family: 'Urbanist', sans-serif;
     color: #12141D;
+    text-align: justify;
 }
 .testimonials_item .content hr {
     margin: 30px 0px;
@@ -2251,7 +2252,7 @@ span.marking {
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: justify;
 
 }
 .c_accor_content .accordion-button::after {
@@ -2273,6 +2274,7 @@ span.marking {
 .c_accor_content .accordion-body p {
     color: var(--blackH1);
     line-height: 32px;
+    text-align: justify;
 }
 /*---------------------------
 8.3) contact accordion area ends here
@@ -2636,6 +2638,7 @@ span.underline2 {
 .features_content2 .content p {
     font-size: 16px;
     line-height: 24px;
+    text-align: justify;
 }
 
 .testimonials_item{
@@ -3411,7 +3414,7 @@ span.underline2 {
     box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
     padding: 21px 40px 12px;
     z-index: 2;
-    height: 320px;
+    height: 450px;
 }
 
 .news-one__meta {
@@ -3420,7 +3423,7 @@ span.underline2 {
     align-items: center;
     justify-content: center;
     top: -40px;
-    left: 42%;
+    left: 37%;
 }
 
 .news-one__meta li {
@@ -3591,8 +3594,8 @@ span.underline2 {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     border-bottom: 1px solid #C0C0C0;
 }
 
@@ -3604,6 +3607,7 @@ span.underline2 {
     letter-spacing: 0em;
     text-align: left;
     color: #808080;
+    margin-bottom: 1rem;
 
 }
 

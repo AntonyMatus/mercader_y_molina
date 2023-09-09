@@ -64,7 +64,7 @@
                       <!-- list  -->
                       <div class="abf_description">
                         <p data-aos="fade-up">
-                          ¡Bienvenido a Mercader & Molina!, Somos un equipo altamente calificado y comprometido que se especializa en diversas áreas legales. Con una amplia experiencia en los ámbitos corporativo, litigio, inmobiliario y auditoría legal, brindamos soluciones legales integrales y eficientes para satisfacer las necesidades de nuestros clientes. Nuestro enfoque personalizado y orientado al cliente nos permite comprender a fondo los desafíos legales que enfrentan las empresas y los particulares. 
+                          ¡Bienvenido a Mercader & Molina!, Somos un equipo altamente calificado y comprometido que se especializa en diversas áreas legales. Con una amplia experiencia en los ámbitos corporativo, propiedad intelectual, inmobiliario y auditoría legal, brindamos soluciones legales integrales y eficientes para satisfacer las necesidades de nuestros clientes. Nuestro enfoque personalizado y orientado al cliente nos permite comprender a fondo los desafíos legales que enfrentan las empresas y los particulares.
                         </p>
                       </div>
                       <!-- button  -->
@@ -83,6 +83,7 @@
                             <li class="text_serv"><span class="numeracion">02</span> Contratos Civiles y Mercantiles</li>
                             <li class="text_serv"><span class="numeracion">03</span> Inmobiliario</li>
                             <li class="text_serv"><span class="numeracion">04</span> Auditoría Legal</li>
+                            <li class="text_serv"><span class="numeracion">05</span> Propiedad Intelectual</li>
                           </ul>
                           
                         </div>
@@ -243,18 +244,6 @@
                                               </div>
                                             </div>
                                             <!-- item  -->
-                                            <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
-                                              <h2 id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">¿Cómo puede ayudar su despacho de abogados en casos de litigio?</button>
-                                              </h2>
-                                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                  <p>
-                                                    Contamos con un equipo de abogados litigantes experimentados que están preparados para representar sus intereses en disputas legales. Ya sea en casos de litigio civil, penal o administrativo, nuestro despacho está dedicado a proteger sus derechos y buscar la mejor resolución posible. Realizaremos un exhaustivo análisis de su caso, desarrollaremos estrategias efectivas y lo guiaremos a lo largo de todo el proceso legal.
-                                                  </p>
-                                                </div>
-                                              </div>
-                                            </div>
                                             <!-- item  -->
                                             <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
                                               <h2 id="headingThree">
@@ -289,6 +278,30 @@
                                                 <div class="accordion-body">
                                                   <p>
                                                     Para solicitar una consulta o contratar nuestros servicios legales, puede comunicarse con nosotros a través de nuestra página de contacto o llamarnos directamente. Estaremos encantados de programar una reunión con uno de nuestros abogados expertos para discutir su caso y sus necesidades legales específicas. Durante la consulta, evaluaremos su situación y le proporcionaremos información detallada sobre cómo podemos ayudarle y cuáles son los costos asociados.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                                              <h2 id="headingfive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseTwo">¿Qué es la propiedad intelectual y por qué es importante protegerla?</button>
+                                              </h2>
+                                              <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <p>
+                                                    La propiedad intelectual se refiere a las creaciones de la mente, como invenciones, obras literarias y artísticas, diseños, símbolos, nombres y más. Protegerla es esencial para asegurar que las ideas y creaciones de individuos y empresas estén resguardadas de la copia no autorizada o el uso indebido. Esto fomenta la innovación y permite a los creadores beneficiarse de sus esfuerzos creativos.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item aos-init aos-animate" data-aos="fade-up">
+                                              <h2 id="headingfive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesevent" aria-expanded="false" aria-controls="collapseTwo">¿Qué servicios ofrecemos en el ámbito de la propiedad intelectual?</button>
+                                              </h2>
+                                              <div id="collapsesevent" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                  <p>
+                                                    En Mercader & Molina, ofrecemos una amplia gama de servicios en propiedad intelectual. Esto incluye la búsqueda y registro de patentes, marcas y derechos de autor, la redacción de contratos de licencia y transferencia de tecnología, asesoramiento en litigios de propiedad intelectual y la protección de secretos comerciales. Estamos comprometidos en salvaguardar sus activos intangibles y maximizar sus derechos en el mundo de la innovación.
                                                   </p>
                                                 </div>
                                               </div>
@@ -346,7 +359,7 @@
     <div class="container">
         <div class="row justify-content-center gap-respons">
             <!--news One Single Start-->
-            <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                 <div class="news-one__single">
                     <div class="news-one__img-box">
                         <div class="news-one__img">
@@ -372,7 +385,7 @@
             </div>
             <!--news One Single End-->
             <!--news One Single Start-->
-            <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
               <div class="news-one__single">
                   <div class="news-one__img-box">
                       <div class="news-one__img">
@@ -397,9 +410,36 @@
                       </div>
                   </div>
               </div>
-          </div>
+            </div>
             <!--news One Single End-->
             <!--news One Single Start-->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp mtr-9rem" data-wow-delay="100ms">
+              <div class="news-one__single">
+                  <div class="news-one__img-box">
+                      <div class="news-one__img">
+                          
+                      </div>
+                      <div class="news-one__content">
+                          <ul class="news-one__meta list-unstyled">
+                              <li>
+                                  <div class="thumb_icon">
+                                    <img src="{{asset('assets/images/icon/icon_mercader.svg')}}" alt="icon mercader">
+                                  </div>
+                              </li>
+                          </ul>
+                          <h3 class="news-one__title">Mtro. Eduardo Villar Conde.</h3>
+                          <p class="news-one-puesto">Asociado</p>
+                          <ul class="viñetas">
+                            <li class="estudios">Asociado Especialista en Propiedad Intelectual. </li>
+                            <li class="estudios">Licenciado en Derecho Universidad Anáhuac.</li>
+                            <li class="estudios">Maestro en Derecho Empresarial Universidad Anáhuac.</li>
+                            <li class="estudios">Diplomado Derecho Corporativo UADY.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!--news One Single End-->
             
         </div>
     </div>
